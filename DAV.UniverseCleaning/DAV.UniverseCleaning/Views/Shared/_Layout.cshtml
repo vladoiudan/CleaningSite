@@ -1,0 +1,121 @@
+﻿@using DAV.UniverseCleaning.Controllers
+@{
+    var hideTitle = ViewBag.HideTitle ?? false;
+    var hideMessage = ViewBag.HideMessage ?? false;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html;" charset=" utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="@ViewBag.Keywords" />
+    <meta name="description" content="@ViewBag.Description" />
+    <title>@ViewBag.Title</title>
+
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/site")
+
+    <script type="text/javascript">
+        Cufon.replace('h1')('h2')('h3')('h4')('#logo a')('#buttons a');
+    </script>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/excoloSlider")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+
+<body>
+    <div id="main">
+        <!-- header begins -->
+        <div class="content_top"></div>
+        <div id="header">
+            <div class="logoWrapper">
+                <div class="logo">
+                    <a href="@Url.Action("Index","Home")"><img src="@Url.Content("~/Images/universeCleaningLogo.png")" alt="Universe Cleaning Logo"></a>
+                </div>
+                <div class="callEstimate">
+                    @*<div id="fb-root1"></div>
+                        <script>
+                            (function (d, s, id) {
+                                var js, fjs = d.getElementsByTagName(s)[0];
+                                if (d.getElementById(id)) return;
+                                js = d.createElement(s); js.id = id;
+                                js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
+                                fjs.parentNode.insertBefore(js, fjs);
+                            }(document, 'script', 'facebook-jssdk'));</script>
+                        <div class="fb-like" data-href="http://universecleaning.co.uk/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>*@
+                    <br />
+                    <span>CALL FOR A FREE ESTIMATE&nbsp;0746 313 7337<br>0747 689 7333</span>
+                </div>
+            </div>
+            <div id="buttons">
+                @Html.ActionLink("Home", "Index", "Home", null, new { @class = "but" })
+                <div class="but_razd"></div>
+                @Html.ActionLink("Services", "Index", "Services", null, new { @class = "but" })
+                <div class="but_razd"></div>
+                @Html.ActionLink("Offers", "Offers", "Home", null, new { @class = "but" })
+                <div class="but_razd"></div>
+                @Html.ActionLink("Testimonials", "Testimonials", "Home", null, new { @class = "but" })
+                <div class="but_razd"></div>
+                @Html.ActionLink("About Us", "About", "Home", null, new { @class = "but" })
+                <div class="but_razd"></div>
+                @Html.ActionLink("Contact", "Contact", "Home", null, new { @class = "but" })
+                <div class="but_razd"></div>
+                @*<a href="about_us.html" class="but" title="">About Us</a><div class="but_razd"></div>
+                    <a href="our_services.html" class="but" title="">Our Services</a><div class="but_razd"></div>
+                    <a href="our_products.html" class="but" title="">Our&nbsp;Products</a><div class="but_razd"></div>
+                    <a href="contact_us.html" class="but" title="">Contact&nbsp;us</a>*@
+            </div>
+        </div>
+        <div class="header_bot"></div>
+        <!-- header ends -->
+        <!-- content -->
+        <div class="clear"></div>
+        <div class="content_top"></div>
+        <div id="content">
+            @if (!hideTitle)
+            {
+                <h2>@ViewBag.Title.</h2>
+                if (!hideMessage)
+                {
+                    <h3>@ViewBag.Message</h3>
+                }
+            }
+            @RenderBody()
+            <div class="clear"></div>
+        </div>
+        <div class="content_bot"></div>
+    </div>
+    <div id="footer">
+        <div id="footer_box1">
+            <p>
+                Copyright 2015. Designed by DAV
+                <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a>
+            </p>
+        </div>
+        <div id="footer_box2">
+            @*<div id="fb-root"></div>
+                <script>
+                    (function (d, s, id) {
+                        var js, fjs = d.getElementsByTagName(s)[0];
+                        if (d.getElementById(id)) return;
+                        js = d.createElement(s); js.id = id;
+                        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
+                        fjs.parentNode.insertBefore(js, fjs);
+                    }(document, 'script', 'facebook-jssdk'));</script>
+                <div class="fb-like" data-href="http://universecleaning.co.uk/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>*@
+        </div>
+    </div>
+    @RenderSection("scripts", required: false)
+    <script type="text/javascript">
+        $(function () {
+            $("#slider").excoloSlider({
+                autoSize: true,
+                height: 259
+            });
+        });
+    </script>
+</body>
+</html>

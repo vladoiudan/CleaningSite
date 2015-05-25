@@ -1,0 +1,30 @@
+﻿@if (!ViewData.ModelMetadata.HideSurroundingHtml)
+{
+    <div class="content-row" style="height: 100%">
+          
+        @if (ViewBag.HideLabel == null)
+        {
+                <div class="titleLabel">
+                @if (ViewData.ModelMetadata.IsRequired && !(ViewData.Model is Boolean) && !ViewData.ModelMetadata.IsNullableValueType)
+                {
+                    <span>*</span>
+                }
+                    @Html.Label(""):
+                </div>
+        }
+                else{
+                    <text>&nbsp;</text>
+        }
+           
+
+        <div class="inputField" style="height: 93%">
+            @RenderSection("Data")
+            @Html.ValidationMessage("", new { Class = "error" })
+        </div>
+    </div>
+    <div class="clearfix"></div>
+}
+else
+{
+    @RenderSection("Data")
+}
