@@ -25,17 +25,24 @@ namespace DAV.UniverseCleaning.Controllers
             return View(new ContactMessage());
         }
         [HttpPost]
-        public ActionResult Contact(ContactMessage message)
+        public ActionResult Contact(ContactMessage data)
         {
             if (ModelState.IsValid)
             {
-                IMailServiceBll mailService = new SmtpMailServiceBll();
-                var email = "vladoiudan@yahoo.com";
-                mailService.SendMail(message.Email, string.Format("Contact Form Submission: {0}", message.Name),
-                    message.Message, false, email);
-                ViewBag.SuccessMessage = "We have received your message and it will be processed soon. Thank you.";
+                try
+                {
+                    IMailService mailService = new SmtpMailService();
+                    const string email = "info@universecleaning.co.uk";
+                    mailService.SendMail(data.Email, string.Format("Contact Form Submission: {0}", data.Name),
+                        data.Message, false, email);
+                    ViewBag.SuccessMessage = "We have received your message and it will be processed soon. Thank you.";
+                }
+                catch (Exception ex)
+                {
+                    ModelState.AddModelError("Error", ex);
+                }
             }
-            return View(message);
+            return View(data);
         }
 
         public ActionResult Offers()
