@@ -6,7 +6,7 @@ using System.Net.Mail;
 
 namespace DAV.UniverseCleaning.Helpers
 {
-    public class SmtpMailServiceBll : IMailServiceBll
+    public class SmtpMailService : IMailService
     {
 
         #region IMailService Members

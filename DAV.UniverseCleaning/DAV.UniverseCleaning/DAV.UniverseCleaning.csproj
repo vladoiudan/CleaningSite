@@ -189,8 +189,8 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Helpers\EmailAddressHelper.cs" />
-    <Compile Include="Helpers\IMailServiceBll.cs" />
-    <Compile Include="Helpers\SmtpMailServiceBll.cs" />
+    <Compile Include="Helpers\IMailService.cs" />
+    <Compile Include="Helpers\SmtpMailService.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ContactMessage.cs" />
     <Compile Include="Models\IdentityModels.cs" />
