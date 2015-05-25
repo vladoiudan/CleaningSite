@@ -88,6 +88,60 @@ namespace DAV.UniverseCleaning.App_LocalResources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string AfterBuildersCleaningKeywords {
+            get {
+                return ResourceManager.GetString("AfterBuildersCleaningKeywords", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Services - After Builders Cleaning.
+        /// </summary>
+        public static string AfterBuildersTitle {
+            get {
+                return ResourceManager.GetString("AfterBuildersTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string CarpetCleaningKeywords {
+            get {
+                return ResourceManager.GetString("CarpetCleaningKeywords", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Services - Carpet Cleaning.
+        /// </summary>
+        public static string CarpetCleaningTitle {
+            get {
+                return ResourceManager.GetString("CarpetCleaningTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string ComercialServiceKeywords {
+            get {
+                return ResourceManager.GetString("ComercialServiceKeywords", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Services - Comercial Service.
+        /// </summary>
+        public static string ComercialServiceTitle {
+            get {
+                return ResourceManager.GetString("ComercialServiceTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Our Address:.
         /// </summary>
         public static string ContactUsAddressTitle {
@@ -126,6 +180,60 @@ namespace DAV.UniverseCleaning.App_LocalResources {
         /// <summary>
         ///   Looks up a localized string similar to .
         /// </summary>
+        public static string CustomerSatisfactionKeywords {
+            get {
+                return ResourceManager.GetString("CustomerSatisfactionKeywords", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Customer Satisfaction.
+        /// </summary>
+        public static string CustomerSatisfactionTitle {
+            get {
+                return ResourceManager.GetString("CustomerSatisfactionTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Services - Domestic Cleaning.
+        /// </summary>
+        public static string DomesticCleaningTitle {
+            get {
+                return ResourceManager.GetString("DomesticCleaningTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string DomesticServiceKeywords {
+            get {
+                return ResourceManager.GetString("DomesticServiceKeywords", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Services - End of Tenancy Cleaning.
+        /// </summary>
+        public static string EndOfTenancyCleaningTitle {
+            get {
+                return ResourceManager.GetString("EndOfTenancyCleaningTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string EndOfTenancyKeywords {
+            get {
+                return ResourceManager.GetString("EndOfTenancyKeywords", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
         public static string HomeKeywords {
             get {
                 return ResourceManager.GetString("HomeKeywords", resourceCulture);
@@ -138,6 +246,24 @@ namespace DAV.UniverseCleaning.App_LocalResources {
         public static string HomePageTitle {
             get {
                 return ResourceManager.GetString("HomePageTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string IroningAtHomeKeywords {
+            get {
+                return ResourceManager.GetString("IroningAtHomeKeywords", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Services - Ironing at your Home.
+        /// </summary>
+        public static string IroningAtHomeTitle {
+            get {
+                return ResourceManager.GetString("IroningAtHomeTitle", resourceCulture);
             }
         }
         
@@ -162,9 +288,36 @@ namespace DAV.UniverseCleaning.App_LocalResources {
         /// <summary>
         ///   Looks up a localized string similar to .
         /// </summary>
+        public static string OvenCleaningKeywords {
+            get {
+                return ResourceManager.GetString("OvenCleaningKeywords", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Services - Oven Cleaning.
+        /// </summary>
+        public static string OvenCleaningTitle {
+            get {
+                return ResourceManager.GetString("OvenCleaningTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
         public static string ServicesKeywords {
             get {
                 return ResourceManager.GetString("ServicesKeywords", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Our Services.
+        /// </summary>
+        public static string ServicesTitle {
+            get {
+                return ResourceManager.GetString("ServicesTitle", resourceCulture);
             }
         }
         
@@ -174,6 +327,24 @@ namespace DAV.UniverseCleaning.App_LocalResources {
         public static string SpecialOffersKeywords {
             get {
                 return ResourceManager.GetString("SpecialOffersKeywords", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string SpringCleaningKeywords {
+            get {
+                return ResourceManager.GetString("SpringCleaningKeywords", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Services - Spring Clean.
+        /// </summary>
+        public static string SpringCleanTitle {
+            get {
+                return ResourceManager.GetString("SpringCleanTitle", resourceCulture);
             }
         }
         
@@ -192,6 +363,24 @@ namespace DAV.UniverseCleaning.App_LocalResources {
         public static string TestimonialsTitle {
             get {
                 return ResourceManager.GetString("TestimonialsTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string WhyUsKeywords {
+            get {
+                return ResourceManager.GetString("WhyUsKeywords", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Why Us.
+        /// </summary>
+        public static string WhyUsTitle {
+            get {
+                return ResourceManager.GetString("WhyUsTitle", resourceCulture);
             }
         }
     }

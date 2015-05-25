@@ -411,63 +411,6 @@ h1 {
 
 /* our_services */
 
-#box2_all {
-}
-
-    #box2_all .box {
-        float: left;
-        width: 338px;
-    }
-
-    #box2_all h1 {
-        padding: 22px 0 10px 0px;
-        text-align: right;
-        font-size: 24px;
-        color: #fff;
-        font-weight: normal;
-    }
-
-    #box2_all .box_left {
-        float: left;
-        width: 59px;
-        height: 72px;
-        background: url(../Images/num_bg.png) left top no-repeat;
-        color: #FFFFFF;
-        font-size: 65px;
-        padding: 12px 0 0 27px;
-    }
-
-    #box2_all .box_right {
-        float: right;
-        padding-right: 0px;
-        width: 236px;
-    }
-
-        #box2_all .box_right p {
-            display: block;
-            line-height: 20px;
-        }
-
-    #box2_all .box_left img {
-        padding-top: 5px;
-        display: block;
-        margin: 0 auto;
-    }
-
-    #box2_all .box_div {
-        float: left;
-        width: 7px;
-        height: 10px;
-    }
-
-    #box2_all h3 {
-        text-align: left;
-        font-size: 24px;
-        color: #353535;
-        font-weight: normal;
-        padding-bottom: 5px;
-    }
-
 #services .block {
     min-height: 116px;
 }
