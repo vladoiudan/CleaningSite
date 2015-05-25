@@ -49,7 +49,7 @@
         <div class="index_left_left">
             <h3>Who We Are</h3>
             <div class="block">
-                <img src="@Url.Content("~/Images/img0003.png")" alt="" />
+                <img src="@Url.Content("~/Images/img0003.png")" alt="Quality Cleaning" />
                 <p>
                     <strong>Quality Cleaning</strong><br />
                     Our cleaning business services provide a clean and healthy workplace. Materials and equipment are included in price and provided by our cleaning team. We believe we offer the best quality service at a sensible and affordable price. Our success is a direct result of our commitment to honesty, reliability and our approach to service quality.
@@ -58,7 +58,7 @@
             </div>
             <div class="clear" style="height: 35px;"></div>
             <div class="block">
-                <img src="@Url.Content("~/Images/img0002.png")" alt="" />
+                <img src="@Url.Content("~/Images/img0002.png")" alt="Professional Cleaning" />
                 <p>
                     <strong>Professional Cleaning</strong><br />
                     Our policy on services quality demands that we must consistently provide an honest, economic and reliable service, which meets the needs of our customers.
@@ -67,7 +67,7 @@
             </div>
             <div class="clear" style="height: 35px;"></div>
             <div class="block">
-                <img src="@Url.Content("~/Images/img0001.png")" alt="" />
+                <img src="@Url.Content("~/Images/img0001.png")" alt="Affordable Rates" />
                 <p>
                     <strong>Affordable Rates</strong><br />
                     Call us today to arrange your free, no-obligation in-home estimate for your individual home cleaning
@@ -79,14 +79,14 @@
         <div class="index_left_right">
             <h3>Our Services</h3>
             <ul class="list_index">
-                <li><a href="#">Domestic Cleaning</a></li>
-                <li><a href="#">Spring Clean</a></li>
-                <li><a href="#">Oven Clean</a></li>
-                <li><a href="#">Commercial Sevice</a></li>
-                <li><a href="#">Ironing at your home</a></li>
-                <li><a href="#">End of Tenancy</a></li>
-                <li><a href="#">Carpet Cleaning</a></li>
-                <li><a href="#">After Builders Cleaning</a></li>
+                <li>@Html.ActionLink("Domestic Cleaning","DomesticCleaning","Services")</li>
+                <li>@Html.ActionLink("Spring Clean", "SpringCleaning", "Services")</li>
+                <li>@Html.ActionLink("Oven Clean", "OvenCleaning", "Services")</li>
+                <li>@Html.ActionLink("Commercial Sevice", "ComercialService", "Services")</li>
+                <li>@Html.ActionLink("Ironing at your home", "IroningAtHome", "Services")</li>
+                <li>@Html.ActionLink("End of Tenancy", "EndOfTenancyCleaning", "Services")</li>
+                <li>@Html.ActionLink("Carpet Cleaning", "CarpetCleaning", "Services")</li>
+                <li>@Html.ActionLink("After Builders Cleaning", "AfterBuildersCleaning", "Services")</li>
             </ul>
         </div>
         <div class="clear"></div>
