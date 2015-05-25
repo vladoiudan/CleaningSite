@@ -1,0 +1,24 @@
+﻿@{
+    Layout = "~/Views/Shared/EditorTemplates/_Template.cshtml";
+}
+
+@{
+    var attributes = new Dictionary<string, object>();
+    string cssClass = ViewData["class"] as string;
+    string style = ViewData["style"] as string;
+    cssClass = String.Concat(cssClass, " ", "text-box multi-line");
+    if (ViewData.ModelMetadata.AdditionalValues.ContainsKey("StringTrim"))
+    {
+        cssClass = String.Concat(cssClass, " ", "stringtrim");
+    }
+    if (!String.IsNullOrEmpty(style))
+    {
+        attributes.Add("style", style);
+    }
+    attributes.Add("class", cssClass);
+    attributes.Add("placeholder", ViewBag.Placeholder);
+}
+
+@section Data {
+    @Html.TextArea("", ViewData.TemplateInfo.FormattedModelValue.ToString(), 0, 0, attributes)
+}

@@ -1,0 +1,49 @@
+﻿@using DAV.UniverseCleaning.App_LocalResources
+@model DAV.UniverseCleaning.Models.ContactMessage
+@{
+    ViewBag.Title = Resource.ContactUsTitle;
+    ViewBag.Message = Resource.ContactUsAddressTitle;
+    ViewBag.Keywords = Resource.ContactUsKeywords;
+    ViewBag.HideMessage = true;
+}
+<div>
+    <div class="left38">
+        <address>
+            <h3>@ViewBag.Message</h3>
+            <div class="line"></div>
+            Bishops Stortford<br />
+            CM233YP<br />
+            United Kingdom<br />
+            <abbr title="Phone">Phone:</abbr>
+            0746 313 7337<br />
+            <abbr title="Phone">Phone:</abbr>
+            0747 689 7333<br />
+            <strong>Info:</strong>   <a href="mailto:info@universecleaning.co.uk">info@universecleaning.co.uk</a><br />
+        </address>
+        <div class="contactForm">
+            <h3>Contact Us:</h3>
+            <div class="line"></div>
+            @using (Html.BeginForm())
+            {
+                if (string.IsNullOrEmpty(ViewBag.SuccessMessage))
+                {
+                    @Html.ValidationSummary()
+                    ViewBag.Placeholder = "Johnny Smith";
+                    @Html.EditorFor(x => x.Name)
+                    ViewBag.Placeholder = "example@mail.com";
+                    @Html.EditorFor(x => x.Email, "String")
+                    ViewBag.Placeholder = "Write something to us";
+                    @Html.EditorFor(x => x.Message)
+                    <input type="submit" value="Submit" class="but_submit"><br>
+                }
+                else
+                {
+                    <div class="success">@ViewBag.SuccessMessage</div>
+                }
+            }
+        </div>
+    </div>
+    <div class="left">
+        <iframe name="maps" id="InlineFrame2" src="https://mapsengine.google.com/map/embed?mid=zS4zu6hWEgh4.klao5zUw8xwY" width="620" height="560" scrolling="no"></iframe>
+    </div>
+</div>
