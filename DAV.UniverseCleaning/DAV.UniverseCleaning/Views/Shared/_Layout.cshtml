@@ -13,13 +13,9 @@
     <title>@ViewBag.Title</title>
 
     @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/site")
-
-    <script type="text/javascript">
-        Cufon.replace('h1')('h2')('h3')('h4')('#logo a')('#buttons a');
-    </script>
 
     @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/site")
     @Scripts.Render("~/bundles/excoloSlider")
     @Scripts.Render("~/bundles/bootstrap")
     @Scripts.Render("~/bundles/modernizr")
@@ -36,7 +32,7 @@
                     <a href="@Url.Action("Index","Home")"><img src="@Url.Content("~/Images/universeCleaningLogo.png")" alt="Universe Cleaning Logo"></a>
                 </div>
                 <div class="callEstimate">
-                    @*<div id="fb-root1"></div>
+                    <div id="fb-root1"></div>
                         <script>
                             (function (d, s, id) {
                                 var js, fjs = d.getElementsByTagName(s)[0];
@@ -45,28 +41,32 @@
                                 js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
                                 fjs.parentNode.insertBefore(js, fjs);
                             }(document, 'script', 'facebook-jssdk'));</script>
-                        <div class="fb-like" data-href="http://universecleaning.co.uk/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>*@
+                        <div class="fb-like" data-href="http://universecleaning.co.uk/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
                     <br />
                     <span>CALL FOR A FREE ESTIMATE&nbsp;0746 313 7337<br>0747 689 7333</span>
                 </div>
             </div>
-            <div id="buttons">
-                @Html.ActionLink("Home", "Index", "Home", null, new { @class = "but" })
-                <div class="but_razd"></div>
-                @Html.ActionLink("Services", "Index", "Services", null, new { @class = "but" })
-                <div class="but_razd"></div>
-                @Html.ActionLink("Offers", "Offers", "Home", null, new { @class = "but" })
-                <div class="but_razd"></div>
-                @Html.ActionLink("Testimonials", "Testimonials", "Home", null, new { @class = "but" })
-                <div class="but_razd"></div>
-                @Html.ActionLink("About Us", "About", "Home", null, new { @class = "but" })
-                <div class="but_razd"></div>
-                @Html.ActionLink("Contact", "Contact", "Home", null, new { @class = "but" })
-                <div class="but_razd"></div>
-                @*<a href="about_us.html" class="but" title="">About Us</a><div class="but_razd"></div>
-                    <a href="our_services.html" class="but" title="">Our Services</a><div class="but_razd"></div>
-                    <a href="our_products.html" class="but" title="">Our&nbsp;Products</a><div class="but_razd"></div>
-                    <a href="contact_us.html" class="but" title="">Contact&nbsp;us</a>*@
+            <div>
+                <ul id="menu" class="menu k-widget k-reset k-header k-menu k-menu-horizontal">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>
+                        @Html.ActionLink("Services", "Index", "Services")
+                        <ul>
+                            <li>@Html.ActionLink("Domestic Cleaning", "DomesticCleaning", "Services")</li>
+                            <li>@Html.ActionLink("Spring Clean", "SpringCleaning", "Services")</li>
+                            <li>@Html.ActionLink("Oven Cleaning", "OvenCleaning", "Services")</li>
+                            <li>@Html.ActionLink("Comercial Service", "ComercialService", "Services")</li>
+                            <li>@Html.ActionLink("Ironing at your home", "IroningAtHome", "Services")</li>
+                            <li>@Html.ActionLink("End of Tenancy", "EndOfTenancyCleaning", "Services")</li>
+                            <li>@Html.ActionLink("Carpet Cleaning", "CarpetCleaning", "Services")</li>
+                            <li>@Html.ActionLink("After Builders Clean", "AfterBuildersCleaning", "Services")</li>
+                        </ul>
+                    </li>
+                    <li>@Html.ActionLink("Offers", "Offers", "Home")</li>
+                    <li>@Html.ActionLink("Testimonials", "Testimonials", "Home")</li>
+                    <li>@Html.ActionLink("About Us", "About", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                </ul>
             </div>
         </div>
         <div class="header_bot"></div>
@@ -92,11 +92,10 @@
         <div id="footer_box1">
             <p>
                 Copyright 2015. Designed by DAV
-                <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a>
             </p>
         </div>
         <div id="footer_box2">
-            @*<div id="fb-root"></div>
+            <div id="fb-root"></div>
                 <script>
                     (function (d, s, id) {
                         var js, fjs = d.getElementsByTagName(s)[0];
@@ -105,7 +104,7 @@
                         js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
                         fjs.parentNode.insertBefore(js, fjs);
                     }(document, 'script', 'facebook-jssdk'));</script>
-                <div class="fb-like" data-href="http://universecleaning.co.uk/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>*@
+                <div class="fb-like" data-href="http://universecleaning.co.uk/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
         </div>
     </div>
     @RenderSection("scripts", required: false)
@@ -115,6 +114,9 @@
                 autoSize: true,
                 height: 259
             });
+        });
+        $(document).ready(function () {
+            $("#menu").kendoMenu();
         });
     </script>
 </body>

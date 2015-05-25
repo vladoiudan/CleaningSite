@@ -20,8 +20,7 @@ namespace DAV.UniverseCleaning
                         "~/Scripts/modernizr-*"));
 
             bundles.Add(new ScriptBundle("~/bundles/site").Include(
-                      "~/Scripts/cufon-yui.js",
-                      "~/Scripts/Book_Antiqua_400.font.js"));
+                      "~/Scripts/kendo/2015.1.318/kendo.all.min.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/excoloSlider").Include(
                       "~/Scripts/jquery.excoloSlider.js"));
@@ -33,7 +32,10 @@ namespace DAV.UniverseCleaning
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/jquery.excoloSlider.css",
                       "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+                      "~/Content/menu.css",
+                      "~/Content/site.css",
+                      "~/Content/kendo/2015.1.318/kendo.metro.min.css",
+                      "~/Content/kendo/2015.1.318/kendo.common.min.css"));
         }
     }
 }
