@@ -31,20 +31,20 @@
     <div class="col-md-4">
         <div class="dropShadow">
             <div class="display-Center"><h3>Quality Cleaning</h3></div>
-            <img class="center-image" src="@Url.Content("~/Images/img0003.png")" alt="Quality Cleaning" />
-        </div>
+            <a href="@Url.Action("Index", "Services")"><img class="center-image" src="@Url.Content("~/Images/img0003.png")" alt="Quality Cleaning" /></a>
+</div>
     </div>
     <div class="col-md-4">
         <div class="dropShadow">
             <div class="display-Center"><h3>Professional Cleaning</h3></div>
-            <img class="center-image" src="@Url.Content("~/Images/img0002.png")" alt="Professional Cleaning" />
+            <a href="@Url.Action("About", "Home")"><img class="center-image" src="@Url.Content("~/Images/img0002.png")" alt="Professional Cleaning" /></a>
         </div>
     </div>
     <div class="col-md-4">
         <div class="dropShadow">
             <div class="display-Center"><h3>Affordable Rates</h3></div>
-            <img class="center-image" src="@Url.Content("~/Images/img0001.png")" alt="Affordable Rates" />
-        </div>
+            <a href="@Url.Action("Contact", "Home")"><img class="center-image" src="@Url.Content("~/Images/img0001.png")" alt="Affordable Rates" /></a>
+</div>
     </div>
 </div>
 <div class="clear"></div>
@@ -58,7 +58,7 @@
                     <strong>Quality Cleaning</strong><br />
                     Our cleaning business services provide a clean and healthy workplace. Materials and equipment are included in price and provided by our cleaning team. We believe we offer the best quality service at a sensible and affordable price. Our success is a direct result of our commitment to honesty, reliability and our approach to service quality.
                 </p>
-                <div class="read_more"><a href="#">read more...</a></div>
+                <div class="read_more">@Html.ActionLink("read more...", "Index", "Services")</div>
             </div>
             <div class="clear" style="height: 35px;"></div>
             <div class="block">
