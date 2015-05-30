@@ -70,8 +70,11 @@
         <div id="content">
             @if (!hideTitle)
             {
-                <h1>@ViewBag.Title.</h1>
-                if (!hideMessage)
+                if (string.IsNullOrEmpty(ViewBag.Title))
+                {
+                    <h1>@ViewBag.Title.</h1>
+                }
+                if (!hideMessage && !string.IsNullOrEmpty(ViewBag.Message))
                 {
                     <h2>@ViewBag.Message</h2>
                 }
