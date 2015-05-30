@@ -70,7 +70,7 @@ namespace DAV.UniverseCleaning.App_LocalResources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Bishops Stortford Cleaning, Bishop Cleaning, Cheshunt Cleaning, Hertford Cleaning, Hoddeston Cleaning, Harlow Cleaning, Roydon Cleaning, Broxborne Cleaning.
         /// </summary>
         public static string AboutUsKeywords {
             get {
@@ -88,7 +88,7 @@ namespace DAV.UniverseCleaning.App_LocalResources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Bishops Stortford Cleaning, Bishop Cleaning, Cheshunt Cleaning, Hertford Cleaning, Hoddeston Cleaning, Harlow Cleaning, Roydon Cleaning, Broxborne Cleaning.
         /// </summary>
         public static string AfterBuildersCleaningKeywords {
             get {
@@ -106,7 +106,7 @@ namespace DAV.UniverseCleaning.App_LocalResources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Bishops Stortford Cleaning, Bishop Cleaning, Cheshunt Cleaning, Hertford Cleaning, Hoddeston Cleaning, Harlow Cleaning, Roydon Cleaning, Broxborne Cleaning.
         /// </summary>
         public static string CarpetCleaningKeywords {
             get {
@@ -124,7 +124,7 @@ namespace DAV.UniverseCleaning.App_LocalResources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Bishops Stortford Cleaning, Bishop Cleaning, Cheshunt Cleaning, Hertford Cleaning, Hoddeston Cleaning, Harlow Cleaning, Roydon Cleaning, Broxborne Cleaning.
         /// </summary>
         public static string ComercialServiceKeywords {
             get {
@@ -160,7 +160,7 @@ namespace DAV.UniverseCleaning.App_LocalResources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Bishops Stortford Cleaning, Bishop Cleaning, Cheshunt Cleaning, Hertford Cleaning, Hoddeston Cleaning, Harlow Cleaning, Roydon Cleaning, Broxborne Cleaning.
         /// </summary>
         public static string ContactUsKeywords {
             get {
@@ -178,7 +178,7 @@ namespace DAV.UniverseCleaning.App_LocalResources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Bishops Stortford Cleaning, Bishop Cleaning, Cheshunt Cleaning, Hertford Cleaning, Hoddeston Cleaning, Harlow Cleaning, Roydon Cleaning, Broxborne Cleaning.
         /// </summary>
         public static string CustomerSatisfactionKeywords {
             get {
@@ -205,7 +205,7 @@ namespace DAV.UniverseCleaning.App_LocalResources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Bishops Stortford Cleaning, Bishop Cleaning, Cheshunt Cleaning, Hertford Cleaning, Hoddeston Cleaning, Harlow Cleaning, Roydon Cleaning, Broxborne Cleaning.
         /// </summary>
         public static string DomesticServiceKeywords {
             get {
@@ -223,7 +223,7 @@ namespace DAV.UniverseCleaning.App_LocalResources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Bishops Stortford Cleaning, Bishop Cleaning, Cheshunt Cleaning, Hertford Cleaning, Hoddeston Cleaning, Harlow Cleaning, Roydon Cleaning, Broxborne Cleaning.
         /// </summary>
         public static string EndOfTenancyKeywords {
             get {
@@ -232,7 +232,7 @@ namespace DAV.UniverseCleaning.App_LocalResources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Bishops Stortford Cleaning, Bishop Cleaning, Cheshunt Cleaning, Hertford Cleaning, Hoddeston Cleaning, Harlow Cleaning, Roydon Cleaning, Broxborne Cleaning.
         /// </summary>
         public static string HomeKeywords {
             get {
@@ -250,7 +250,7 @@ namespace DAV.UniverseCleaning.App_LocalResources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Bishops Stortford Cleaning, Bishop Cleaning, Cheshunt Cleaning, Hertford Cleaning, Hoddeston Cleaning, Harlow Cleaning, Roydon Cleaning, Broxborne Cleaning.
         /// </summary>
         public static string IroningAtHomeKeywords {
             get {
@@ -286,7 +286,7 @@ namespace DAV.UniverseCleaning.App_LocalResources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Bishops Stortford Cleaning, Bishop Cleaning, Cheshunt Cleaning, Hertford Cleaning, Hoddeston Cleaning, Harlow Cleaning, Roydon Cleaning, Broxborne Cleaning.
         /// </summary>
         public static string OvenCleaningKeywords {
             get {
@@ -304,7 +304,7 @@ namespace DAV.UniverseCleaning.App_LocalResources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Bishops Stortford Cleaning, Bishop Cleaning, Cheshunt Cleaning, Hertford Cleaning, Hoddeston Cleaning, Harlow Cleaning, Roydon Cleaning, Broxborne Cleaning.
         /// </summary>
         public static string ServicesKeywords {
             get {
@@ -322,7 +322,7 @@ namespace DAV.UniverseCleaning.App_LocalResources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Bishops Stortford Cleaning, Bishop Cleaning, Cheshunt Cleaning, Hertford Cleaning, Hoddeston Cleaning, Harlow Cleaning, Roydon Cleaning, Broxborne Cleaning.
         /// </summary>
         public static string SpecialOffersKeywords {
             get {
@@ -331,7 +331,7 @@ namespace DAV.UniverseCleaning.App_LocalResources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Bishops Stortford Cleaning, Bishop Cleaning, Cheshunt Cleaning, Hertford Cleaning, Hoddeston Cleaning, Harlow Cleaning, Roydon Cleaning, Broxborne Cleaning.
         /// </summary>
         public static string SpringCleaningKeywords {
             get {
@@ -349,7 +349,7 @@ namespace DAV.UniverseCleaning.App_LocalResources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Bishops Stortford Cleaning, Bishop Cleaning, Cheshunt Cleaning, Hertford Cleaning, Hoddeston Cleaning, Harlow Cleaning, Roydon Cleaning, Broxborne Cleaning.
         /// </summary>
         public static string TestimonialsKeywords {
             get {
@@ -367,7 +367,7 @@ namespace DAV.UniverseCleaning.App_LocalResources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Bishops Stortford Cleaning, Bishop Cleaning, Cheshunt Cleaning, Hertford Cleaning, Hoddeston Cleaning, Harlow Cleaning, Roydon Cleaning, Broxborne Cleaning.
         /// </summary>
         public static string WhyUsKeywords {
             get {
