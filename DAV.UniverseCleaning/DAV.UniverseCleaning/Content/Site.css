@@ -128,7 +128,7 @@ body {
 
 .callEstimate {
     float: right;
-    margin-top: 10px;
+    margin-top: 5px;
     text-align: right;
 }
 
@@ -136,7 +136,7 @@ body {
     float: right;
     margin-top: 10px;
     text-align: right;
-    width: 580px
+    width: 310px
 }
 
 .logo {
