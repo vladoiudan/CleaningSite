@@ -61,7 +61,7 @@ namespace DAV.UniverseCleaning.App_LocalResources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Bishops Stortford Cleaning, Bishop Cleaning, Cheshunt Cleaning, Hertford Cleaning, Hoddeston Cleaning, Harlow Cleaning, Roydon Cleaning, Broxborne Cleaning.
         /// </summary>
         public static string AboutUsDescription {
             get {
@@ -97,11 +97,29 @@ namespace DAV.UniverseCleaning.App_LocalResources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Bishops Stortford Cleaning, Bishop Cleaning, Cheshunt Cleaning, Hertford Cleaning, Hoddeston Cleaning, Harlow Cleaning, Roydon Cleaning, Broxborne Cleaning.
+        /// </summary>
+        public static string AfterBuildersDescription {
+            get {
+                return ResourceManager.GetString("AfterBuildersDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Services - After Builders Cleaning.
         /// </summary>
         public static string AfterBuildersTitle {
             get {
                 return ResourceManager.GetString("AfterBuildersTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bishops Stortford Cleaning, Bishop Cleaning, Cheshunt Cleaning, Hertford Cleaning, Hoddeston Cleaning, Harlow Cleaning, Roydon Cleaning, Broxborne Cleaning.
+        /// </summary>
+        public static string CarpetCleaningDescription {
+            get {
+                return ResourceManager.GetString("CarpetCleaningDescription", resourceCulture);
             }
         }
         
@@ -120,6 +138,15 @@ namespace DAV.UniverseCleaning.App_LocalResources {
         public static string CarpetCleaningTitle {
             get {
                 return ResourceManager.GetString("CarpetCleaningTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bishops Stortford Cleaning, Bishop Cleaning, Cheshunt Cleaning, Hertford Cleaning, Hoddeston Cleaning, Harlow Cleaning, Roydon Cleaning, Broxborne Cleaning.
+        /// </summary>
+        public static string ComercialServiceDescription {
+            get {
+                return ResourceManager.GetString("ComercialServiceDescription", resourceCulture);
             }
         }
         
@@ -151,7 +178,7 @@ namespace DAV.UniverseCleaning.App_LocalResources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Bishops Stortford Cleaning, Bishop Cleaning, Cheshunt Cleaning, Hertford Cleaning, Hoddeston Cleaning, Harlow Cleaning, Roydon Cleaning, Broxborne Cleaning.
         /// </summary>
         public static string ContactUsDescription {
             get {
@@ -169,11 +196,29 @@ namespace DAV.UniverseCleaning.App_LocalResources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string ContactUsMessage {
+            get {
+                return ResourceManager.GetString("ContactUsMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Contact.
         /// </summary>
         public static string ContactUsTitle {
             get {
                 return ResourceManager.GetString("ContactUsTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bishops Stortford Cleaning, Bishop Cleaning, Cheshunt Cleaning, Hertford Cleaning, Hoddeston Cleaning, Harlow Cleaning, Roydon Cleaning, Broxborne Cleaning.
+        /// </summary>
+        public static string CustomerSatisfactionDescription {
+            get {
+                return ResourceManager.GetString("CustomerSatisfactionDescription", resourceCulture);
             }
         }
         
@@ -196,6 +241,15 @@ namespace DAV.UniverseCleaning.App_LocalResources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Bishops Stortford Cleaning, Bishop Cleaning, Cheshunt Cleaning, Hertford Cleaning, Hoddeston Cleaning, Harlow Cleaning, Roydon Cleaning, Broxborne Cleaning.
+        /// </summary>
+        public static string DomesticCleaningDescription {
+            get {
+                return ResourceManager.GetString("DomesticCleaningDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Services - Domestic Cleaning.
         /// </summary>
         public static string DomesticCleaningTitle {
@@ -210,6 +264,15 @@ namespace DAV.UniverseCleaning.App_LocalResources {
         public static string DomesticServiceKeywords {
             get {
                 return ResourceManager.GetString("DomesticServiceKeywords", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bishops Stortford Cleaning, Bishop Cleaning, Cheshunt Cleaning, Hertford Cleaning, Hoddeston Cleaning, Harlow Cleaning, Roydon Cleaning, Broxborne Cleaning.
+        /// </summary>
+        public static string EndOfTenancyCleaningDescription {
+            get {
+                return ResourceManager.GetString("EndOfTenancyCleaningDescription", resourceCulture);
             }
         }
         
@@ -232,6 +295,15 @@ namespace DAV.UniverseCleaning.App_LocalResources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Universe Cleaning offers a flexible home cleaning service at an affordable price (no matter whether a house or a flat clean is required), based on a no-obligation, free estimate carried out in your home. Uniformed, fully insured staff typically work in teams of two to efficiently clean your home..
+        /// </summary>
+        public static string HomeDescription {
+            get {
+                return ResourceManager.GetString("HomeDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Bishops Stortford Cleaning, Bishop Cleaning, Cheshunt Cleaning, Hertford Cleaning, Hoddeston Cleaning, Harlow Cleaning, Roydon Cleaning, Broxborne Cleaning.
         /// </summary>
         public static string HomeKeywords {
@@ -241,11 +313,20 @@ namespace DAV.UniverseCleaning.App_LocalResources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Universe Cleaning - Cleaning Services.
+        ///   Looks up a localized string similar to Welcome to Universe Cleaning.
         /// </summary>
         public static string HomePageTitle {
             get {
                 return ResourceManager.GetString("HomePageTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bishops Stortford Cleaning, Bishop Cleaning, Cheshunt Cleaning, Hertford Cleaning, Hoddeston Cleaning, Harlow Cleaning, Roydon Cleaning, Broxborne Cleaning.
+        /// </summary>
+        public static string IroningAtHomeDescription {
+            get {
+                return ResourceManager.GetString("IroningAtHomeDescription", resourceCulture);
             }
         }
         
@@ -268,11 +349,20 @@ namespace DAV.UniverseCleaning.App_LocalResources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Bishops Stortford Cleaning, Bishop Cleaning, Cheshunt Cleaning, Hertford Cleaning, Hoddeston Cleaning, Harlow Cleaning, Roydon Cleaning, Broxborne Cleaning.
         /// </summary>
         public static string OffersDescription {
             get {
                 return ResourceManager.GetString("OffersDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string OffersMessage {
+            get {
+                return ResourceManager.GetString("OffersMessage", resourceCulture);
             }
         }
         
@@ -282,6 +372,15 @@ namespace DAV.UniverseCleaning.App_LocalResources {
         public static string OffersTitle {
             get {
                 return ResourceManager.GetString("OffersTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bishops Stortford Cleaning, Bishop Cleaning, Cheshunt Cleaning, Hertford Cleaning, Hoddeston Cleaning, Harlow Cleaning, Roydon Cleaning, Broxborne Cleaning.
+        /// </summary>
+        public static string OvenCleaningDescription {
+            get {
+                return ResourceManager.GetString("OvenCleaningDescription", resourceCulture);
             }
         }
         
@@ -306,6 +405,15 @@ namespace DAV.UniverseCleaning.App_LocalResources {
         /// <summary>
         ///   Looks up a localized string similar to Bishops Stortford Cleaning, Bishop Cleaning, Cheshunt Cleaning, Hertford Cleaning, Hoddeston Cleaning, Harlow Cleaning, Roydon Cleaning, Broxborne Cleaning.
         /// </summary>
+        public static string ServicesDescription {
+            get {
+                return ResourceManager.GetString("ServicesDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bishops Stortford Cleaning, Bishop Cleaning, Cheshunt Cleaning, Hertford Cleaning, Hoddeston Cleaning, Harlow Cleaning, Roydon Cleaning, Broxborne Cleaning.
+        /// </summary>
         public static string ServicesKeywords {
             get {
                 return ResourceManager.GetString("ServicesKeywords", resourceCulture);
@@ -322,11 +430,29 @@ namespace DAV.UniverseCleaning.App_LocalResources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to http://universecleaning.azurewebsites.net/.
+        /// </summary>
+        public static string SiteUrl {
+            get {
+                return ResourceManager.GetString("SiteUrl", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Bishops Stortford Cleaning, Bishop Cleaning, Cheshunt Cleaning, Hertford Cleaning, Hoddeston Cleaning, Harlow Cleaning, Roydon Cleaning, Broxborne Cleaning.
         /// </summary>
         public static string SpecialOffersKeywords {
             get {
                 return ResourceManager.GetString("SpecialOffersKeywords", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bishops Stortford Cleaning, Bishop Cleaning, Cheshunt Cleaning, Hertford Cleaning, Hoddeston Cleaning, Harlow Cleaning, Roydon Cleaning, Broxborne Cleaning.
+        /// </summary>
+        public static string SpringCleanDescription {
+            get {
+                return ResourceManager.GetString("SpringCleanDescription", resourceCulture);
             }
         }
         
@@ -351,6 +477,15 @@ namespace DAV.UniverseCleaning.App_LocalResources {
         /// <summary>
         ///   Looks up a localized string similar to Bishops Stortford Cleaning, Bishop Cleaning, Cheshunt Cleaning, Hertford Cleaning, Hoddeston Cleaning, Harlow Cleaning, Roydon Cleaning, Broxborne Cleaning.
         /// </summary>
+        public static string TestimonialsDescription {
+            get {
+                return ResourceManager.GetString("TestimonialsDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bishops Stortford Cleaning, Bishop Cleaning, Cheshunt Cleaning, Hertford Cleaning, Hoddeston Cleaning, Harlow Cleaning, Roydon Cleaning, Broxborne Cleaning.
+        /// </summary>
         public static string TestimonialsKeywords {
             get {
                 return ResourceManager.GetString("TestimonialsKeywords", resourceCulture);
@@ -363,6 +498,15 @@ namespace DAV.UniverseCleaning.App_LocalResources {
         public static string TestimonialsTitle {
             get {
                 return ResourceManager.GetString("TestimonialsTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bishops Stortford Cleaning, Bishop Cleaning, Cheshunt Cleaning, Hertford Cleaning, Hoddeston Cleaning, Harlow Cleaning, Roydon Cleaning, Broxborne Cleaning.
+        /// </summary>
+        public static string WhyUsDescription {
+            get {
+                return ResourceManager.GetString("WhyUsDescription", resourceCulture);
             }
         }
         

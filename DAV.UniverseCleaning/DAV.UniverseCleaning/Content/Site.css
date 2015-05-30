@@ -11,7 +11,7 @@ Released for free under a Creative Commons Attribution 2.5 License
 }
 
 img {
-    border: 0px;
+    border: 0;
 }
 
 a {
@@ -38,6 +38,18 @@ li {
 .clear {
     width: 100%;
     height: 1px;
+    clear: both;
+}
+
+.clearMed {
+    width: 100%;
+    height: 20px;
+    clear: both;
+}
+
+.clearTall {
+    width: 100%;
+    height: 35px;
     clear: both;
 }
 
@@ -97,25 +109,38 @@ body {
 }
 
 .header_top {
-    background: url(../Images/content_top.png) left top no-repeat;
+    background: url(../Images/content-top.png) left top no-repeat;
     height: 10px;
 }
 
+.content-row {
+    height: 100%;
+}
+
+.inputField {
+    height: 93%;
+}
+
 .header_bot {
-    background: url(../Images/content_bot.png) left bottom no-repeat;
+    background: url(../Images/content-bot.png) left bottom no-repeat;
     height: 10px;
 }
 
 .callEstimate {
     float: right;
-    width: 49%;
-    margin-top: 60px;
+    margin-top: 10px;
     text-align: right;
+}
+
+.socialBtns {
+    float: right;
+    margin-top: 10px;
+    text-align: right;
+    width: 580px
 }
 
 .logo {
     float: left;
-    width: 49%;
 }
 
 .logoWrapper {
@@ -152,13 +177,13 @@ body {
 }
 
 .top_top {
-    background: url(../Images/top_top.png) left top no-repeat;
+    background: url(../Images/top-top.png) left top no-repeat;
     height: 12px;
 }
 
 
 .top_bot {
-    background: url(../Images/top_bot.png) left bottom no-repeat;
+    background: url(../Images/top-bot.png) left bottom no-repeat;
     height: 12px;
 }
 
@@ -171,12 +196,12 @@ body {
 }
 
 .content_top {
-    background: url(../Images/content_top.png) left top no-repeat;
+    background: url(../Images/content-top.png) left top no-repeat;
     height: 10px;
 }
 
 .content_bot {
-    background: url(../Images/content_bot.png) left bottom no-repeat;
+    background: url(../Images/content-bot.png) left bottom no-repeat;
     height: 10px;
 }
 
@@ -195,16 +220,8 @@ body {
     float: left;
     width: 248px;
     height: 187px;
-    background: url(../Images/box_index.jpg) left top no-repeat;
+    background: url(../Images/box-index.jpg) left top no-repeat;
     color: #FFFFFF;
-}
-
-h1 {
-    padding: 22px 0 10px 0px;
-    text-align: right;
-    font-size: 24px;
-    color: #fff;
-    font-weight: normal;
 }
 
 .box1_left {
@@ -261,7 +278,7 @@ h1 {
 }
 
 .index_left_bg_full {
-    background: url(../Images/index_left_bg.gif) top repeat-x;
+    background: url(../Images/index-left-bg.gif) top repeat-x;
 }
 
 .index_left_left_full {
@@ -272,13 +289,13 @@ h1 {
 
 
 .index_left {
-    background: url(../Images/index_left.gif) 581px repeat-y;
+    background: url(../Images/index-left.gif) 581px repeat-y;
     float: left;
     width: 780px;
 }
 
 .index_left_bg {
-    background: url(../Images/index_left_bg.gif) top repeat-x;
+    background: url(../Images/index-left-bg.gif) top repeat-x;
 }
 
 .index_left_left {
@@ -345,7 +362,7 @@ h1 {
 
     .list_index li {
         list-style: none;
-        background: url(../Images/list_index.gif) 0px 6px no-repeat;
+        background: url(../Images/list-index.gif) 0px 6px no-repeat;
         padding: 0 0 12px 17px;
     }
 
@@ -364,6 +381,10 @@ h1 {
     height: 1px;
 }
 
+.lineTall {
+    background: url(../Images/line.gif) top repeat-x;
+    height: 20px;
+}
 /*footer*/
 
 #footer {
@@ -521,7 +542,7 @@ fieldset {
 
 
 #input_text1, #input_text2 {
-    background: url(../Images/input_text.gif) left top no-repeat;
+    background: url(../Images/input-text.gif) left top no-repeat;
     padding: 0 0 0 12px;
     color: #C9C8C8;
 }
@@ -540,7 +561,7 @@ form {
 }
 
 #box_form .input {
-    background: url(../Images/input_text.gif) left top no-repeat;
+    background: url(../Images/input-text.gif) left top no-repeat;
     font-family: Arial, Helvetica, sans-serif;
     width: 583px;
     padding: 7px 10px 7px 12px;
@@ -567,7 +588,7 @@ fieldset {
     width: 136px;
     height: 30px;
     padding: 0px 0 0 0;
-    background: url(../Images/but_submit.gif) left bottom no-repeat;
+    background: url(../Images/but-submit.gif) left bottom no-repeat;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
     font-weight: normal;
@@ -585,6 +606,7 @@ fieldset {
 
 .text-box {
     font: normal normal normal 12px/1.3em Tahoma,tahoma-w01-regular,tahoma-w02-regular,tahoma-w10-regular,tahoma-w15--regular,tahoma-w99-regular,sans-serif;
+    background-color: #b8bbc1;
     background-color: rgba(184, 187, 193, 0.2);
     -webkit-appearance: none;
     -moz-appearance: none;

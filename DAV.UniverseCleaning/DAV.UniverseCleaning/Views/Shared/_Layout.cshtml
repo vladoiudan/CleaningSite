@@ -5,23 +5,23 @@
 }
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="icon" href="@Url.Content("~/Images/favicon.png")"/>
-        <meta http-equiv="content-type" content="text/html;" charset=" utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="keywords" content="@ViewBag.Keywords" />
-        <meta name="description" content="@ViewBag.Description" />
-        <title>@ViewBag.Title</title>
+<head>
+    <link rel="icon" href="@Url.Content("~/Images/favicon.png")" />
+    <meta http-equiv="content-type" content="text/html;" charset=" utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="@ViewBag.Keywords" />
+    <meta name="description" content="@ViewBag.Description" />
+    <title>@ViewBag.Title</title>
 
-        @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/css")
 
-        @Scripts.Render("~/bundles/jquery")
-        @Scripts.Render("~/bundles/site")
-        @Scripts.Render("~/bundles/excoloSlider")
-        @Scripts.Render("~/bundles/bootstrap")
-        @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/site")
+    @Scripts.Render("~/bundles/excoloSlider")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/modernizr")
 
-    </head>
+</head>
 
 <body>
     <div id="main">
@@ -33,20 +33,39 @@
                     <a href="@Url.Action("Index","Home")"><img src="@Url.Content("~/Images/universeCleaningLogo.png")" alt="Universe Cleaning Logo"></a>
                 </div>
                 <div class="callEstimate">
-                    <div id="fb-root1"></div>
-                        <script>
-                            (function (d, s, id) {
-                                var js, fjs = d.getElementsByTagName(s)[0];
-                                if (d.getElementById(id)) return;
-                                js = d.createElement(s); js.id = id;
-                                js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
-                                fjs.parentNode.insertBefore(js, fjs);
-                            }(document, 'script', 'facebook-jssdk'));</script>
-                        <div class="fb-like" data-href="http://universecleaning.co.uk/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
-                    <br />
+                    <div class="socialBtns">
+                        <div class="col-md-2">
+                            <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+                            <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + '://platform.twitter.com/widgets.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'twitter-wjs');</script>
+                        </div>
+                        <div class="col-md-4">
+                            <!-- Place this tag in your head or just before your close body tag. -->
+                            <script src="https://apis.google.com/js/platform.js" async defer>
+                                { lang: 'en-GB' }
+                            </script>
+
+                            <!-- Place this tag where you want the +1 button to render. -->
+                            <div class="g-plusone" data-annotation="inline" data-width="300"></div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div id="fb-root1"></div>
+                            <script>
+                                (function (d, s, id) {
+                                    var js, fjs = d.getElementsByTagName(s)[0];
+                                    if (d.getElementById(id)) return;
+                                    js = d.createElement(s); js.id = id;
+                                    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
+                                    fjs.parentNode.insertBefore(js, fjs);
+                                }(document, 'script', 'facebook-jssdk'));</script>
+                            <div class="fb-like" data-href="@DAV.UniverseCleaning.App_LocalResources.Resource.SiteUrl" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+                        </div>
+                    </div>
+                    <div class="clearTall"></div>
                     <span>CALL FOR A FREE ESTIMATE&nbsp;0746 313 7337<br>0747 689 7333</span>
                 </div>
             </div>
+            <div class="clear"></div>
             <div>
                 <ul id="menu" class="menu k-widget k-reset k-header k-menu k-menu-horizontal">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
@@ -78,10 +97,10 @@
         <div id="content">
             @if (!hideTitle)
             {
-                <h2>@ViewBag.Title.</h2>
+                <h1>@ViewBag.Title.</h1>
                 if (!hideMessage)
                 {
-                    <h3>@ViewBag.Message</h3>
+                    <h2>@ViewBag.Message</h2>
                 }
             }
             @RenderBody()
@@ -96,7 +115,7 @@
             </p>
         </div>
         <div id="footer_box2">
-            <div id="fb-root"></div>
+            @*<div id="fb-root"></div>
                 <script>
                     (function (d, s, id) {
                         var js, fjs = d.getElementsByTagName(s)[0];
@@ -105,7 +124,7 @@
                         js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
                         fjs.parentNode.insertBefore(js, fjs);
                     }(document, 'script', 'facebook-jssdk'));</script>
-                <div class="fb-like" data-href="http://universecleaning.co.uk/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+                <div class="fb-like" data-href="@DAV.UniverseCleaning.App_LocalResources.Resource.SiteUrl" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>*@
         </div>
     </div>
     @RenderSection("scripts", required: false)
