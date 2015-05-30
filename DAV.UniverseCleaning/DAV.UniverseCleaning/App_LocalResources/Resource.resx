@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutUsDescription" xml:space="preserve">
-    <value />
+    <value>Bishops Stortford Cleaning, Bishop Cleaning, Cheshunt Cleaning, Hertford Cleaning, Hoddeston Cleaning, Harlow Cleaning, Roydon Cleaning, Broxborne Cleaning</value>
   </data>
   <data name="AboutUsKeywords" xml:space="preserve">
     <value>Bishops Stortford Cleaning, Bishop Cleaning, Cheshunt Cleaning, Hertford Cleaning, Hoddeston Cleaning, Harlow Cleaning, Roydon Cleaning, Broxborne Cleaning</value>
@@ -148,7 +148,7 @@
     <value>Our Address:</value>
   </data>
   <data name="ContactUsDescription" xml:space="preserve">
-    <value />
+    <value>Bishops Stortford Cleaning, Bishop Cleaning, Cheshunt Cleaning, Hertford Cleaning, Hoddeston Cleaning, Harlow Cleaning, Roydon Cleaning, Broxborne Cleaning</value>
   </data>
   <data name="ContactUsKeywords" xml:space="preserve">
     <value>Bishops Stortford Cleaning, Bishop Cleaning, Cheshunt Cleaning, Hertford Cleaning, Hoddeston Cleaning, Harlow Cleaning, Roydon Cleaning, Broxborne Cleaning</value>
@@ -178,7 +178,7 @@
     <value>Bishops Stortford Cleaning, Bishop Cleaning, Cheshunt Cleaning, Hertford Cleaning, Hoddeston Cleaning, Harlow Cleaning, Roydon Cleaning, Broxborne Cleaning</value>
   </data>
   <data name="HomePageTitle" xml:space="preserve">
-    <value>Universe Cleaning - Cleaning Services</value>
+    <value>Welcome to Universe Cleaning</value>
   </data>
   <data name="IroningAtHomeKeywords" xml:space="preserve">
     <value>Bishops Stortford Cleaning, Bishop Cleaning, Cheshunt Cleaning, Hertford Cleaning, Hoddeston Cleaning, Harlow Cleaning, Roydon Cleaning, Broxborne Cleaning</value>
@@ -187,7 +187,7 @@
     <value>Services - Ironing at your Home</value>
   </data>
   <data name="OffersDescription" xml:space="preserve">
-    <value />
+    <value>Bishops Stortford Cleaning, Bishop Cleaning, Cheshunt Cleaning, Hertford Cleaning, Hoddeston Cleaning, Harlow Cleaning, Roydon Cleaning, Broxborne Cleaning</value>
   </data>
   <data name="OffersTitle" xml:space="preserve">
     <value>Special Offers</value>
@@ -224,5 +224,53 @@
   </data>
   <data name="WhyUsTitle" xml:space="preserve">
     <value>Why Us</value>
+  </data>
+  <data name="AfterBuildersDescription" xml:space="preserve">
+    <value>Bishops Stortford Cleaning, Bishop Cleaning, Cheshunt Cleaning, Hertford Cleaning, Hoddeston Cleaning, Harlow Cleaning, Roydon Cleaning, Broxborne Cleaning</value>
+  </data>
+  <data name="CarpetCleaningDescription" xml:space="preserve">
+    <value>Bishops Stortford Cleaning, Bishop Cleaning, Cheshunt Cleaning, Hertford Cleaning, Hoddeston Cleaning, Harlow Cleaning, Roydon Cleaning, Broxborne Cleaning</value>
+  </data>
+  <data name="ComercialServiceDescription" xml:space="preserve">
+    <value>Bishops Stortford Cleaning, Bishop Cleaning, Cheshunt Cleaning, Hertford Cleaning, Hoddeston Cleaning, Harlow Cleaning, Roydon Cleaning, Broxborne Cleaning</value>
+  </data>
+  <data name="ContactUsMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CustomerSatisfactionDescription" xml:space="preserve">
+    <value>Bishops Stortford Cleaning, Bishop Cleaning, Cheshunt Cleaning, Hertford Cleaning, Hoddeston Cleaning, Harlow Cleaning, Roydon Cleaning, Broxborne Cleaning</value>
+  </data>
+  <data name="DomesticCleaningDescription" xml:space="preserve">
+    <value>Bishops Stortford Cleaning, Bishop Cleaning, Cheshunt Cleaning, Hertford Cleaning, Hoddeston Cleaning, Harlow Cleaning, Roydon Cleaning, Broxborne Cleaning</value>
+  </data>
+  <data name="EndOfTenancyCleaningDescription" xml:space="preserve">
+    <value>Bishops Stortford Cleaning, Bishop Cleaning, Cheshunt Cleaning, Hertford Cleaning, Hoddeston Cleaning, Harlow Cleaning, Roydon Cleaning, Broxborne Cleaning</value>
+  </data>
+  <data name="HomeDescription" xml:space="preserve">
+    <value>Universe Cleaning offers a flexible home cleaning service at an affordable price (no matter whether a house or a flat clean is required), based on a no-obligation, free estimate carried out in your home. Uniformed, fully insured staff typically work in teams of two to efficiently clean your home.</value>
+  </data>
+  <data name="IroningAtHomeDescription" xml:space="preserve">
+    <value>Bishops Stortford Cleaning, Bishop Cleaning, Cheshunt Cleaning, Hertford Cleaning, Hoddeston Cleaning, Harlow Cleaning, Roydon Cleaning, Broxborne Cleaning</value>
+  </data>
+  <data name="OffersMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="OvenCleaningDescription" xml:space="preserve">
+    <value>Bishops Stortford Cleaning, Bishop Cleaning, Cheshunt Cleaning, Hertford Cleaning, Hoddeston Cleaning, Harlow Cleaning, Roydon Cleaning, Broxborne Cleaning</value>
+  </data>
+  <data name="ServicesDescription" xml:space="preserve">
+    <value>Bishops Stortford Cleaning, Bishop Cleaning, Cheshunt Cleaning, Hertford Cleaning, Hoddeston Cleaning, Harlow Cleaning, Roydon Cleaning, Broxborne Cleaning</value>
+  </data>
+  <data name="SiteUrl" xml:space="preserve">
+    <value>http://universecleaning.azurewebsites.net/</value>
+  </data>
+  <data name="SpringCleanDescription" xml:space="preserve">
+    <value>Bishops Stortford Cleaning, Bishop Cleaning, Cheshunt Cleaning, Hertford Cleaning, Hoddeston Cleaning, Harlow Cleaning, Roydon Cleaning, Broxborne Cleaning</value>
+  </data>
+  <data name="TestimonialsDescription" xml:space="preserve">
+    <value>Bishops Stortford Cleaning, Bishop Cleaning, Cheshunt Cleaning, Hertford Cleaning, Hoddeston Cleaning, Harlow Cleaning, Roydon Cleaning, Broxborne Cleaning</value>
+  </data>
+  <data name="WhyUsDescription" xml:space="preserve">
+    <value>Bishops Stortford Cleaning, Bishop Cleaning, Cheshunt Cleaning, Hertford Cleaning, Hoddeston Cleaning, Harlow Cleaning, Roydon Cleaning, Broxborne Cleaning</value>
   </data>
 </root>
