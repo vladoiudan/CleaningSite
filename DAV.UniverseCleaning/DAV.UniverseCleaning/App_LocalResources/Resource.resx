@@ -273,4 +273,7 @@
   <data name="WhyUsDescription" xml:space="preserve">
     <value>Bishops Stortford Cleaning, Bishop Cleaning, Cheshunt Cleaning, Hertford Cleaning, Hoddeston Cleaning, Harlow Cleaning, Roydon Cleaning, Broxborne Cleaning</value>
   </data>
+  <data name="AboutUsMessage" xml:space="preserve">
+    <value />
+  </data>
 </root>
