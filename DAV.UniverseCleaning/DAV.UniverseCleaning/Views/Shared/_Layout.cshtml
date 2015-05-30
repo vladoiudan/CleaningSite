@@ -33,34 +33,7 @@
                     <a href="@Url.Action("Index","Home")"><img src="@Url.Content("~/Images/universeCleaningLogo.png")" alt="Universe Cleaning Logo"></a>
                 </div>
                 <div class="callEstimate">
-                    <div class="socialBtns">
-                        <div class="col-md-2">
-                            <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
-                            <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + '://platform.twitter.com/widgets.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'twitter-wjs');</script>
-                        </div>
-                        <div class="col-md-4">
-                            <!-- Place this tag in your head or just before your close body tag. -->
-                            <script src="https://apis.google.com/js/platform.js" async defer>
-                                { lang: 'en-GB' }
-                            </script>
-
-                            <!-- Place this tag where you want the +1 button to render. -->
-                            <div class="g-plusone" data-annotation="inline" data-width="300"></div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div id="fb-root1"></div>
-                            <script>
-                                (function (d, s, id) {
-                                    var js, fjs = d.getElementsByTagName(s)[0];
-                                    if (d.getElementById(id)) return;
-                                    js = d.createElement(s); js.id = id;
-                                    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
-                                    fjs.parentNode.insertBefore(js, fjs);
-                                }(document, 'script', 'facebook-jssdk'));</script>
-                            <div class="fb-like" data-href="@DAV.UniverseCleaning.App_LocalResources.Resource.SiteUrl" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
-                        </div>
-                    </div>
+                    @SocialMediaHelper.SocialMediaButtons();
                     <div class="clearTall"></div>
                     <span>CALL FOR A FREE ESTIMATE&nbsp;0746 313 7337<br>0747 689 7333</span>
                 </div>
@@ -115,16 +88,8 @@
             </p>
         </div>
         <div id="footer_box2">
-            @*<div id="fb-root"></div>
-                <script>
-                    (function (d, s, id) {
-                        var js, fjs = d.getElementsByTagName(s)[0];
-                        if (d.getElementById(id)) return;
-                        js = d.createElement(s); js.id = id;
-                        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
-                        fjs.parentNode.insertBefore(js, fjs);
-                    }(document, 'script', 'facebook-jssdk'));</script>
-                <div class="fb-like" data-href="@DAV.UniverseCleaning.App_LocalResources.Resource.SiteUrl" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>*@
+            @SocialMediaHelper.SocialMediaButtons();
+
         </div>
     </div>
     @RenderSection("scripts", required: false)

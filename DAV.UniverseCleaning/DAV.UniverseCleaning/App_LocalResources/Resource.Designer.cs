@@ -79,6 +79,15 @@ namespace DAV.UniverseCleaning.App_LocalResources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string AboutUsMessage {
+            get {
+                return ResourceManager.GetString("AboutUsMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to About.
         /// </summary>
         public static string AboutUsTitle {

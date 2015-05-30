@@ -482,6 +482,7 @@
     <Content Include="Content\kendo\2015.1.318\fonts\DejaVu\DejaVuSans-BoldOblique.ttf" />
     <Content Include="Content\kendo\2015.1.318\fonts\DejaVu\DejaVuSans-Bold.ttf" />
     <Content Include="Content\kendo\2015.1.318\fonts\DejaVu\DejaVuSans.ttf" />
+    <Content Include="App_Code\SocialMediaHelper.cshtml" />
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
     <Content Include="Icon.png" />
     <Content Include="Images\ajax-loader.gif" />
