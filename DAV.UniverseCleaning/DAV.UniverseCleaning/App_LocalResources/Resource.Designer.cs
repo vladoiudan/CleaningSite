@@ -61,7 +61,7 @@ namespace DAV.UniverseCleaning.App_LocalResources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Bishops Stortford Cleaning, Bishop Cleaning, Cheshunt Cleaning, Hertford Cleaning, Hoddeston Cleaning, Harlow Cleaning, Roydon Cleaning, Broxborne Cleaning.
+        ///   Looks up a localized string similar to Universe Cleaning offers a Professional and Quality Cleaning at an affordable price. Fully insured staff work in teams of two to efficiently clean your home..
         /// </summary>
         public static string AboutUsDescription {
             get {
@@ -106,7 +106,7 @@ namespace DAV.UniverseCleaning.App_LocalResources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Bishops Stortford Cleaning, Bishop Cleaning, Cheshunt Cleaning, Hertford Cleaning, Hoddeston Cleaning, Harlow Cleaning, Roydon Cleaning, Broxborne Cleaning.
+        ///   Looks up a localized string similar to Universe Cleaning offers a Professional and Quality Cleaning at an affordable price. Fully insured staff work in teams of two to efficiently clean your home..
         /// </summary>
         public static string AfterBuildersDescription {
             get {
@@ -124,7 +124,7 @@ namespace DAV.UniverseCleaning.App_LocalResources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Bishops Stortford Cleaning, Bishop Cleaning, Cheshunt Cleaning, Hertford Cleaning, Hoddeston Cleaning, Harlow Cleaning, Roydon Cleaning, Broxborne Cleaning.
+        ///   Looks up a localized string similar to Universe Cleaning offers a Professional and Quality Cleaning at an affordable price. Fully insured staff work in teams of two to efficiently clean your home..
         /// </summary>
         public static string CarpetCleaningDescription {
             get {
@@ -151,7 +151,7 @@ namespace DAV.UniverseCleaning.App_LocalResources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Bishops Stortford Cleaning, Bishop Cleaning, Cheshunt Cleaning, Hertford Cleaning, Hoddeston Cleaning, Harlow Cleaning, Roydon Cleaning, Broxborne Cleaning.
+        ///   Looks up a localized string similar to Universe Cleaning offers a Professional and Quality Cleaning at an affordable price. Fully insured staff work in teams of two to efficiently clean your home..
         /// </summary>
         public static string ComercialServiceDescription {
             get {
@@ -187,7 +187,7 @@ namespace DAV.UniverseCleaning.App_LocalResources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Bishops Stortford Cleaning, Bishop Cleaning, Cheshunt Cleaning, Hertford Cleaning, Hoddeston Cleaning, Harlow Cleaning, Roydon Cleaning, Broxborne Cleaning.
+        ///   Looks up a localized string similar to Universe Cleaning offers a Professional and Quality Cleaning at an affordable price. Fully insured staff work in teams of two to efficiently clean your home..
         /// </summary>
         public static string ContactUsDescription {
             get {
@@ -223,7 +223,7 @@ namespace DAV.UniverseCleaning.App_LocalResources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Bishops Stortford Cleaning, Bishop Cleaning, Cheshunt Cleaning, Hertford Cleaning, Hoddeston Cleaning, Harlow Cleaning, Roydon Cleaning, Broxborne Cleaning.
+        ///   Looks up a localized string similar to Universe Cleaning offers a Professional and Quality Cleaning at an affordable price. Fully insured staff work in teams of two to efficiently clean your home..
         /// </summary>
         public static string CustomerSatisfactionDescription {
             get {
@@ -250,7 +250,7 @@ namespace DAV.UniverseCleaning.App_LocalResources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Bishops Stortford Cleaning, Bishop Cleaning, Cheshunt Cleaning, Hertford Cleaning, Hoddeston Cleaning, Harlow Cleaning, Roydon Cleaning, Broxborne Cleaning.
+        ///   Looks up a localized string similar to Universe Cleaning offers a Professional and Quality Cleaning at an affordable price. Fully insured staff work in teams of two to efficiently clean your home..
         /// </summary>
         public static string DomesticCleaningDescription {
             get {
@@ -277,7 +277,7 @@ namespace DAV.UniverseCleaning.App_LocalResources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Bishops Stortford Cleaning, Bishop Cleaning, Cheshunt Cleaning, Hertford Cleaning, Hoddeston Cleaning, Harlow Cleaning, Roydon Cleaning, Broxborne Cleaning.
+        ///   Looks up a localized string similar to Universe Cleaning offers a Professional and Quality Cleaning at an affordable price. Fully insured staff work in teams of two to efficiently clean your home..
         /// </summary>
         public static string EndOfTenancyCleaningDescription {
             get {
@@ -304,7 +304,7 @@ namespace DAV.UniverseCleaning.App_LocalResources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Universe Cleaning offers a flexible home cleaning service at an affordable price (no matter whether a house or a flat clean is required), based on a no-obligation, free estimate carried out in your home. Uniformed, fully insured staff typically work in teams of two to efficiently clean your home..
+        ///   Looks up a localized string similar to Universe Cleaning offers a Professional and Quality Cleaning at an affordable price. Fully insured staff work in teams of two to efficiently clean your home..
         /// </summary>
         public static string HomeDescription {
             get {
@@ -331,7 +331,7 @@ namespace DAV.UniverseCleaning.App_LocalResources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Bishops Stortford Cleaning, Bishop Cleaning, Cheshunt Cleaning, Hertford Cleaning, Hoddeston Cleaning, Harlow Cleaning, Roydon Cleaning, Broxborne Cleaning.
+        ///   Looks up a localized string similar to Universe Cleaning offers a Professional and Quality Cleaning at an affordable price. Fully insured staff work in teams of two to efficiently clean your home..
         /// </summary>
         public static string IroningAtHomeDescription {
             get {
@@ -358,7 +358,7 @@ namespace DAV.UniverseCleaning.App_LocalResources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Bishops Stortford Cleaning, Bishop Cleaning, Cheshunt Cleaning, Hertford Cleaning, Hoddeston Cleaning, Harlow Cleaning, Roydon Cleaning, Broxborne Cleaning.
+        ///   Looks up a localized string similar to Universe Cleaning offers a Professional and Quality Cleaning at an affordable price. Fully insured staff work in teams of two to efficiently clean your home..
         /// </summary>
         public static string OffersDescription {
             get {
@@ -385,7 +385,7 @@ namespace DAV.UniverseCleaning.App_LocalResources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Bishops Stortford Cleaning, Bishop Cleaning, Cheshunt Cleaning, Hertford Cleaning, Hoddeston Cleaning, Harlow Cleaning, Roydon Cleaning, Broxborne Cleaning.
+        ///   Looks up a localized string similar to Universe Cleaning offers a Professional and Quality Cleaning at an affordable price. Fully insured staff work in teams of two to efficiently clean your home..
         /// </summary>
         public static string OvenCleaningDescription {
             get {
@@ -412,7 +412,7 @@ namespace DAV.UniverseCleaning.App_LocalResources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Bishops Stortford Cleaning, Bishop Cleaning, Cheshunt Cleaning, Hertford Cleaning, Hoddeston Cleaning, Harlow Cleaning, Roydon Cleaning, Broxborne Cleaning.
+        ///   Looks up a localized string similar to Universe Cleaning offers a Professional and Quality Cleaning at an affordable price. Fully insured staff work in teams of two to efficiently clean your home..
         /// </summary>
         public static string ServicesDescription {
             get {
@@ -457,7 +457,7 @@ namespace DAV.UniverseCleaning.App_LocalResources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Bishops Stortford Cleaning, Bishop Cleaning, Cheshunt Cleaning, Hertford Cleaning, Hoddeston Cleaning, Harlow Cleaning, Roydon Cleaning, Broxborne Cleaning.
+        ///   Looks up a localized string similar to Universe Cleaning offers a Professional and Quality Cleaning at an affordable price. Fully insured staff work in teams of two to efficiently clean your home..
         /// </summary>
         public static string SpringCleanDescription {
             get {
@@ -484,7 +484,7 @@ namespace DAV.UniverseCleaning.App_LocalResources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Bishops Stortford Cleaning, Bishop Cleaning, Cheshunt Cleaning, Hertford Cleaning, Hoddeston Cleaning, Harlow Cleaning, Roydon Cleaning, Broxborne Cleaning.
+        ///   Looks up a localized string similar to Universe Cleaning offers a Professional and Quality Cleaning at an affordable price. Fully insured staff work in teams of two to efficiently clean your home..
         /// </summary>
         public static string TestimonialsDescription {
             get {
@@ -511,7 +511,7 @@ namespace DAV.UniverseCleaning.App_LocalResources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Bishops Stortford Cleaning, Bishop Cleaning, Cheshunt Cleaning, Hertford Cleaning, Hoddeston Cleaning, Harlow Cleaning, Roydon Cleaning, Broxborne Cleaning.
+        ///   Looks up a localized string similar to Universe Cleaning offers a Professional and Quality Cleaning at an affordable price. Fully insured staff work in teams of two to efficiently clean your home..
         /// </summary>
         public static string WhyUsDescription {
             get {
