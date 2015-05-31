@@ -16,7 +16,6 @@
     @Styles.Render("~/Content/css")
 
     @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/site")
     @Scripts.Render("~/bundles/excoloSlider")
     @Scripts.Render("~/bundles/bootstrap")
     @Scripts.Render("~/bundles/modernizr")
@@ -39,20 +38,20 @@
                 </div>
             </div>
             <div class="clear"></div>
-            <div>
-                <ul id="menu" class="menu k-widget k-reset k-header k-menu k-menu-horizontal">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>
+            <div id="wb_CssMenu2">
+                <ul>
+                    <li class="firstmain">@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li class="withsubmenu">
                         @Html.ActionLink("Services", "Index", "Services")
                         <ul>
-                            <li>@Html.ActionLink("Domestic Cleaning", "DomesticCleaning", "Services")</li>
+                            <li class="firstitem">@Html.ActionLink("Domestic Cleaning", "DomesticCleaning", "Services",null, new { @class = "active" })</li>
                             <li>@Html.ActionLink("Spring Clean", "SpringCleaning", "Services")</li>
                             <li>@Html.ActionLink("Oven Cleaning", "OvenCleaning", "Services")</li>
                             <li>@Html.ActionLink("Comercial Service", "ComercialService", "Services")</li>
                             <li>@Html.ActionLink("Ironing at your home", "IroningAtHome", "Services")</li>
                             <li>@Html.ActionLink("End of Tenancy", "EndOfTenancyCleaning", "Services")</li>
                             <li>@Html.ActionLink("Carpet Cleaning", "CarpetCleaning", "Services")</li>
-                            <li>@Html.ActionLink("After Builders Clean", "AfterBuildersCleaning", "Services")</li>
+                            <li class="lastitem">@Html.ActionLink("After Builders Clean", "AfterBuildersCleaning", "Services")</li>
                         </ul>
                     </li>
                     <li>@Html.ActionLink("Offers", "Offers", "Home")</li>
@@ -102,9 +101,6 @@
                 autoSize: true,
                 height: 259
             });
-        });
-        $(document).ready(function () {
-            $("#menu").kendoMenu();
         });
     </script>
 </body>
