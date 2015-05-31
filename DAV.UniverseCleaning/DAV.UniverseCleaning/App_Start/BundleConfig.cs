@@ -19,9 +19,6 @@ namespace DAV.UniverseCleaning
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
                         "~/Scripts/modernizr-*"));
 
-            bundles.Add(new ScriptBundle("~/bundles/site").Include(
-                      "~/Scripts/kendo/2015.1.318/kendo.all.min.js"));
-
             bundles.Add(new ScriptBundle("~/bundles/excoloSlider").Include(
                       "~/Scripts/jquery.excoloSlider.js"));
 
@@ -33,9 +30,7 @@ namespace DAV.UniverseCleaning
                       "~/Content/jquery.excoloSlider.css",
                       "~/Content/bootstrap.css",
                       "~/Content/menu.css",
-                      "~/Content/site.css",
-                      "~/Content/kendo/2015.1.318/kendo.metro.min.css",
-                      "~/Content/kendo/2015.1.318/kendo.common.min.css"));
+                      "~/Content/site.css"));
         }
     }
 }
