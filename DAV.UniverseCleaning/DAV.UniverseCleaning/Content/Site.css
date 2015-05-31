@@ -54,7 +54,7 @@ li {
 }
 
 body {
-    width: 96%;
+    width: 100%;
     font: 12px Arial, Helvetica, sans-serif;
     color: #353535;
     background: url(../Images/bg.jpg) top center repeat-x #ffffff;
@@ -136,7 +136,7 @@ body {
     float: right;
     margin-top: 10px;
     text-align: right;
-    width: 310px
+    width:35%;
 }
 
 .logo {
@@ -411,7 +411,6 @@ body {
 
 #footer_box1 {
     float: left;
-    width: 400px;
     padding: 25px 0 0 24px;
     text-align: right;
 }
@@ -664,3 +663,17 @@ address {
 .paddingTop10 {
     padding-top: 10px;
 }
+
+.padLeft93 {
+  padding-left:80px;
+}
+
+.padLeft {
+  padding-left:65px;
+}
+
+/*#footer .padLeft {
+  padding-left:128px;
+    
+}*/
+
