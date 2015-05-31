@@ -29,8 +29,10 @@
                 <div class="logo">
                     <a href="@Url.Action("Index","Home")"><img async src="@Url.Content("~/Images/universeCleaningLogo.png")" alt="Universe Cleaning Logo"></a>
                 </div>
-                <div class="callEstimate">
+                <div>
                     @SocialMediaHelper.SocialMediaButtons();
+                </div>
+                <div class="callEstimate">
                     <div class="clearTall"></div>
                     <span>CALL FOR A FREE ESTIMATE&nbsp;0746 313 7337<br>0747 689 7333</span>
                 </div>
@@ -87,10 +89,7 @@
                 Copyright 2015. Designed by DAV
             </p>
         </div>
-        <div id="footer_box2">
             @SocialMediaHelper.SocialMediaButtons();
-
-        </div>
     </div>
     @RenderSection("scripts", required: false)
     <script type="text/javascript">
