@@ -6,7 +6,7 @@ using DAV.UniverseCleaning.Models;
 
 namespace DAV.UniverseCleaning.Controllers
 {
-    [OutputCache(Duration = int.MaxValue, Location = OutputCacheLocation.Client)]
+    //[OutputCache(Duration = int.MaxValue, Location = OutputCacheLocation.Client)]
     public class HomeController : Controller
     {
         public ActionResult Index()
