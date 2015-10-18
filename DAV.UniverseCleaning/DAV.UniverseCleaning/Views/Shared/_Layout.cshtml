@@ -1,4 +1,5 @@
-﻿@using DAV.UniverseCleaning.Controllers
+﻿@using DAV.UniverseCleaning.App_LocalResources
+@using DAV.UniverseCleaning.Controllers
 @{
     var hideTitle = ViewBag.HideTitle ?? false;
     var hideMessage = ViewBag.HideMessage ?? false;
@@ -7,8 +8,8 @@
 <html>
 <head>
     <link rel="icon" href="@Url.Content("~/Images/favicon.png")" />
-    <meta http-equiv="content-type" content="text/html;" charset=" utf-8" />
-    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="content-type" content="text/html" charset=" utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="@ViewBag.Keywords" />
     <meta name="description" content="@ViewBag.Description" />
     <title>@ViewBag.Title</title>
@@ -21,76 +22,94 @@
 </head>
 
 <body>
-    <div id="main">
-        <!-- header begins -->
-        <div class="content_top"></div>
-        <div id="header">
-            <div class="logoWrapper">
-                <div class="logo">
-                    <a href="@Url.Action("Index","Home")"><img async src="@Url.Content("~/Images/universeCleaningLogo.png")" alt="Universe Cleaning Logo"></a>
-                </div>
+    <!-- header begins -->
+    <div class="container white dropShadow">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a href="@Url.Action("Index","Home")"><img async src="@Url.Content("~/Images/universeCleaningLogo.png")" alt="Universe Cleaning Logo"></a>
+            </div>
+            <div class="navbar-right">
                 <div>
-                    @SocialMediaHelper.SocialMediaButtons();
+                    @SocialMediaHelper.SocialMediaButtons()
                 </div>
                 <div class="callEstimate">
-                    <div class="clearTall"></div>
-                    <span>CALL FOR A FREE ESTIMATE&nbsp;0746 313 7337<br>0747 689 7333</span>
+                    <div class="clearMed"></div>
+                    <span>CALL FOR A FREE ESTIMATE</span>
+                </div>
+                <div>
+                    <abbr title="Mobile">M:</abbr>
+                    @Resource.MobilePhone
+                    <abbr title="Landline">L:</abbr>
+                    @Resource.Landline
                 </div>
             </div>
-            <div class="clear"></div>
-            <div id="wb_CssMenu2">
-                <ul>
-                    <li class="firstmain">@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li class="withsubmenu">
-                        @Html.ActionLink("Services", "Index", "Services")
-                        <ul>
-                            <li class="firstitem">@Html.ActionLink("Domestic Cleaning", "DomesticCleaning", "Services",null, new { @class = "active" })</li>
-                            <li>@Html.ActionLink("Spring Clean", "SpringCleaning", "Services")</li>
-                            <li>@Html.ActionLink("Oven Cleaning", "OvenCleaning", "Services")</li>
-                            <li>@Html.ActionLink("Comercial Service", "ComercialService", "Services")</li>
-                            <li>@Html.ActionLink("Ironing at your home", "IroningAtHome", "Services")</li>
-                            <li>@Html.ActionLink("End of Tenancy", "EndOfTenancyCleaning", "Services")</li>
-                            <li>@Html.ActionLink("Carpet Cleaning", "CarpetCleaning", "Services")</li>
-                            <li class="lastitem">@Html.ActionLink("After Builders Clean", "AfterBuildersCleaning", "Services")</li>
+        </div>
+        <div>
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                            <li class="dropdown">
+                                <a href="@Url.Action("Index", "Services")" class="dropdown-toggle">Services <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li>@Html.ActionLink("Domestic Cleaning", "DomesticCleaning", "Services")</li>
+                                    <li>@Html.ActionLink("Spring Clean", "SpringCleaning", "Services")</li>
+                                    <li>@Html.ActionLink("Oven Cleaning", "OvenCleaning", "Services")</li>
+                                    <li>@Html.ActionLink("Comercial Service", "ComercialService", "Services")</li>
+                                    <li>@Html.ActionLink("Ironing at your home", "IroningAtHome", "Services")</li>
+                                    <li>@Html.ActionLink("End of Tenancy", "EndOfTenancyCleaning", "Services")</li>
+                                    <li>@Html.ActionLink("Carpet Cleaning", "CarpetCleaning", "Services")</li>
+                                    <li>@Html.ActionLink("After Builders Clean", "AfterBuildersCleaning", "Services")</li>
+                                </ul>
+                            </li>
+                            <li>@Html.ActionLink("Offers", "Offers", "Home")</li>
+                            <li>@Html.ActionLink("Testimonials", "Testimonials", "Home")</li>
+                            <li>@Html.ActionLink("About Us", "About", "Home")</li>
+                            <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                         </ul>
-                    </li>
-                    <li>@Html.ActionLink("Offers", "Offers", "Home")</li>
-                    <li>@Html.ActionLink("Testimonials", "Testimonials", "Home")</li>
-                    <li>@Html.ActionLink("About Us", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                </ul>
-            </div>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
         </div>
-        <div class="header_bot"></div>
-        <!-- header ends -->
-        <!-- content -->
-        <div class="clear"></div>
-        <div class="content_top"></div>
-        <div id="content">
-            @if (!hideTitle)
+    </div>
+    <div class="container white dropShadow">
+        @if (!hideTitle)
+        {
+            if (!string.IsNullOrEmpty(ViewBag.Title))
             {
-                if (!string.IsNullOrEmpty(ViewBag.Title))
-                {
-                    <h1>@ViewBag.Title.</h1>
-                }
-                if (!hideMessage && !string.IsNullOrEmpty(ViewBag.Message))
-                {
-                    <h2>@ViewBag.Message</h2>
-                }
+                <h1>@ViewBag.Title.</h1>
             }
-            @RenderBody()
-            <div class="clear"></div>
-        </div>
-        <div class="content_bot"></div>
+            if (!hideMessage && !string.IsNullOrEmpty(ViewBag.Message))
+            {
+                <h2>@ViewBag.Message</h2>
+            }
+        }
+        @RenderBody()
     </div>
-    <div id="footer">
-        <div id="footer_box1">
-            <p>
-                Copyright 2015. Designed by DAV
-            </p>
+    <footer class="panel-footer">
+        <div class="container">
+                <div class="container-fluid">
+                    <div class="pull-left glyphicon-copyright-mark">
+                        <strong>Copyright© 2015. Designed by DAV</strong>
+                    </div>
+                    <div class="pull-right">
+                        @SocialMediaHelper.SocialMediaButtons(true)
+                    </div>
+                </div>
         </div>
-            @SocialMediaHelper.SocialMediaButtons();
-    </div>
+    </footer>
     @RenderSection("scripts", required: false)
     <script type="text/javascript">
         $(function () {
