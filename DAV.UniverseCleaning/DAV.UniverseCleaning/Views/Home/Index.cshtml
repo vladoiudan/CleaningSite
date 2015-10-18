@@ -24,21 +24,17 @@
 <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/slick-theme.css")" />
 <!-- top -->
 <div class="top">
-    <div class="top_top"></div>
-    <div class="top_img">
+    <div></div>
+    <div >
         <div id="slider-wrapper">
             <div id="slider">
-                <img async src="~/Images/top-img.jpg" alt="Chitchen Cleaning" />
-                <img async src="~/Images/top-img2.jpg" alt="House Cleaning" />
-                <img async src="~/Images/top-img3.jpg" alt="Outdoor Cleaning" />
-                <img async src="~/Images/top-img4.jpg" alt="House Cleaning" />
-                <img async src="~/Images/top-img5.jpg" alt="House Cleaning" />
-                <img async src="~/Images/top-img6.jpg" alt="House Cleaning" />
+                @for (int i = 1; i <= 22; i++)
+                {
+                    <img async src='@Url.Content("~/Images/Carousel/images" + @i+".jpg")' alt="Cleaning" />
+                }
             </div>
         </div>
     </div>
-    <div class="top_bot"></div>
-</div>
 <div class="clear"></div>
 <br />
 <p>
