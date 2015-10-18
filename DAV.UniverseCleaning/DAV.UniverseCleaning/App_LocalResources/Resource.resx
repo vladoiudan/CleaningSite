@@ -276,4 +276,10 @@
   <data name="AboutUsMessage" xml:space="preserve">
     <value />
   </data>
+  <data name="Landline" xml:space="preserve">
+    <value>0127 931 9803</value>
+  </data>
+  <data name="MobilePhone" xml:space="preserve">
+    <value>0746 313 7337</value>
+  </data>
 </root>

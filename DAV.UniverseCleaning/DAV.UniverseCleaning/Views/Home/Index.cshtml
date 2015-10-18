@@ -1,128 +1,213 @@
 ﻿@using DAV.UniverseCleaning.App_LocalResources
+@using DAV.UniverseCleaning.Models
 @{
     ViewBag.Title = Resource.HomePageTitle;
     ViewBag.Keywords = Resource.HomeKeywords;
     ViewBag.Description = Resource.HomeDescription;
+    bool showTestimonials = true;
+    var testinonials = new List<TestimonialModel>();
+    testinonials.Add(new TestimonialModel() { PersonTitle = "Mr", PersonName = "W", Date = new DateTime(2015, 09, 24), Content = "I have used many cleaning firms but universe are far the best one Ive ever used and will use. Keep up the good work ! x" });
+    testinonials.Add(new TestimonialModel() { PersonName = "Gill", Location = "Bishop's Stortford", Date = new DateTime(2015, 3, 21), Content = "Universe Cleaning do an amazing job my house is in 'show home' condition, and I've had loads of compliments on how good it looks. The shower screens look like new, which as anyone living in Stortford without a water softener knows is a real achievement, and they use their initiative, so you get cupboards cleaned without having to ask. Lovely people to deal with, too intelligent, hard-working, and with a smile! I'd happily recommend them to anyone. I'm very glad I've met you guys! :) " });
+    testinonials.Add(new TestimonialModel() { PersonName = "Louisa", Location = "Cheshunt", Date = new DateTime(2015, 2, 17), Content = "After much research into cleaning companies, I chose Universe Cleaning based on their impressive website the below testimonials and the fact they provide their own equipment. . I was not disappointed. We had a spring clean and my house looked brand new, I have not seen my shower glass door sparkle that much since it was installed!! I have now decided to continue to use Universe cleaning for a weekly clean as the team were extremely hard working, polite and trustworthy. Great service! Thank you 😃" });
+    testinonials.Add(new TestimonialModel() { PersonName = "Graham McMurchy", Date = new DateTime(2014, 10, 24), Content = "Just want to let you know that Im very pleased with the cleaning job you did. Excellent job! Looks like new! People commented at our open house that the older carpets look new. Ill be sure to recommend you to whoever wants to get carpets cleaned. Thanks so much!" });
+    testinonials.Add(new TestimonialModel() { PersonName = "Karen", Date = new DateTime(2014, 10, 14), Content = "my lovely new rug! thank you so much for the excellent job. Rug looks brand new!! Great service also. You did exactly what it said on the tin!!! " });
+    testinonials.Add(new TestimonialModel() { PersonName = "Helen Porter", Location = "Hertford", Date = new DateTime(2014, 10, 11), Content = "I love coming home to a clean house. Working full time and being a mother of three doesn't allow me the time to keep my house how I would like. Univers Cleaning is a God-send! The great team that clean my home are trustworthy and do a consistent job every time. I recommend Universe Cleaning to all of you who cherish your time like I do. Let the professionals do the work for you!" });
+    testinonials.Add(new TestimonialModel() { PersonName = "Judie Frampton", Location = "Harlow", Date = new DateTime(2014, 9, 24), Content = "My place was a mess. I was overwhelmed at the thought of getting it cleaned up with family coming in over the holidays and was just about ready to cancel when a friend told me about Universe Cleaning. In desperation, I gave them a call and the very next day they not only had a crew in my place cleaning, it was done by the time I got home from work that evening. Not only did my family have a great time here for the holidays, they now think i'm the world's best housekeeper!" });
+    testinonials.Add(new TestimonialModel() { PersonName = "Sarah", Location = "Cheshunt", Date = new DateTime(2014, 8, 20), Content = "We moved into our new home last month and couldn't be more pleased with the way the existing carpets were cleaned. Your technicians were obviously well trained and our fears about having to buy new carpets have now been put aside. We will certainly recommend you guys and use you again ." });
+    testinonials.Add(new TestimonialModel() { PersonName = "Emma Morgan", Location = "", Date = new DateTime(2014, 7, 10), Content = "Wow my house hasn't looked this good for ages. A perfectly professional service with a smile. I would recommend their speedy services to anyone." });
+    testinonials.Add(new TestimonialModel() { PersonName = "Mo Johnson", Location = "Goffs Oak", Date = new DateTime(2014, 7, 6), Content = "BEST cleaners ever. I just love love this couple. So friendly so cheerful. I look forward to seeing them and my dogs do to. I've never had my house looking so clean. Have you ever know cleaners to hoover and clean under the beds, move furniture to hoover and clean...welll Universe cleaners do...every week!!!! That's something you would expect on a spring clean.I really can't praise them enough. SIMPLY BRILLIANT !!!!" });
+    testinonials.Add(new TestimonialModel() { PersonName = "Kelley", Location = "Cheshunt", Date = new DateTime(2014, 7, 3), Content = "Both my wife and I have been sick and our home had fallen into a state of disarray. Clean clothes hadn't been hung up or put away, our spare bedroom had become a storage room and you could barely walk in there. It was greatly in need of a deep cleaning and re-organization. Although the services are listed, my local Universe Cleaning team stepped up to the plate for me and honored a special request. They put away all of our clean clothes and totally organized our spare bedroom along with doing a deep clean of the entire place. I walked in and I was absolutely amazed! They had even put all of my bottled waters in the fridge, stocked our spare toilet paper holders and put fresh water down for our dogs after cleaning their bowls. Thank you so much Universe Cleaning! You've gone above and beyond" });
+    testinonials.Add(new TestimonialModel() { PersonName = "Sue", Location = "", Date = new DateTime(2014, 7, 1), Content = "They are all so friendly and I feel like they are part of our family now. My kids enjoy seeing them each week. Excellent and friendly service every time they come." });
+    testinonials.Add(new TestimonialModel() { PersonName = "Vanessa", Location = "", Date = new DateTime(2014, 7, 1), Content = "Stefan and Anca have been cleaning our house for about a month now. They are absolutely terrific. Always cheerful, very focused on the task at hand and extremely flexible. They have never let me down and I honestly dont think I could imagine life without them now! They really have lifted some of the load I was carrying!" });
 }
+<link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/slick.css")" />
+<link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/slick-theme.css")" />
 <!-- top -->
 <div class="top">
     <div class="top_top"></div>
     <div class="top_img">
         <div id="slider-wrapper">
             <div id="slider">
-                <img async src="~/Images/top-img.jpg" alt="Chitchen Cleaning"/>
-                <img async src="~/Images/top-img2.jpg" alt="House Cleaning"/>
-                <img async src="~/Images/top-img3.jpg" alt="Outdoor Cleaning"/>
-                <img async src="~/Images/top-img4.jpg" alt="House Cleaning"/>
-                <img async src="~/Images/top-img5.jpg" alt="House Cleaning"/>
-                <img async src="~/Images/top-img6.jpg" alt="House Cleaning"/>
+                <img async src="~/Images/top-img.jpg" alt="Chitchen Cleaning" />
+                <img async src="~/Images/top-img2.jpg" alt="House Cleaning" />
+                <img async src="~/Images/top-img3.jpg" alt="Outdoor Cleaning" />
+                <img async src="~/Images/top-img4.jpg" alt="House Cleaning" />
+                <img async src="~/Images/top-img5.jpg" alt="House Cleaning" />
+                <img async src="~/Images/top-img6.jpg" alt="House Cleaning" />
             </div>
         </div>
     </div>
     <div class="top_bot"></div>
 </div>
 <div class="clear"></div>
-<br/>
+<br />
 <p>
-    Universe Cleaning offers a flexible home cleaning service at an affordable price (no matter whether a house or a flat clean is required), based on a no-obligation, free estimate carried out in your home. Uniformed, fully insured staff typically work in teams of two to efficiently clean your home.
+    @LogoNameHelper.DisplayLogoName() offers a flexible home cleaning service at an affordable price (no matter whether a house or a flat clean is required), based on a no-obligation, free estimate carried out in your home. Uniformed, fully insured staff typically work in teams of two to efficiently clean your home.
 </p>
 <div class="row">
-    <div class="col-md-4">
-        <div class="dropShadow">
-            <div class="display-Center"><h3>Quality Cleaning</h3></div>
-            <a href="@Url.Action("Index", "Services")"><img async class="center-image" src="@Url.Content("~/Images/img0003.png")" alt="Quality Cleaning" /></a>
-</div>
-    </div>
-    <div class="col-md-4">
-        <div class="dropShadow">
-            <div class="display-Center"><h3>Professional Cleaning</h3></div>
-            <a href="@Url.Action("About", "Home")"><img async class="center-image" src="@Url.Content("~/Images/img0002.png")" alt="Professional Cleaning" /></a>
+    @if (showTestimonials)
+    {
+        <h3 class="marginLeft20">Testimonials</h3>
+        <div class="col-lg-12">
+            <div class="testimonials">
+                @foreach (var testimonialModel in testinonials)
+                {
+                    <div class="well well-lg testimonial-box">
+                        <div class="panel-title">(@testimonialModel.Date.ToString("D"))&nbsp;<strong>@testimonialModel.PersonTitle @testimonialModel.PersonName@( !string.IsNullOrEmpty(testimonialModel.Location) ? "," + testimonialModel.Location : "")</strong> said:</div>
+                        <p>@testimonialModel.Content</p>
+                    </div>
+                }
+            </div>
         </div>
-    </div>
-    <div class="col-md-4">
-        <div class="dropShadow">
-            <div class="display-Center"><h3>Affordable Rates</h3></div>
-            <a href="@Url.Action("Contact", "Home")"><img async class="center-image" src="@Url.Content("~/Images/img0001.png")" alt="Affordable Rates" /></a>
-</div>
-    </div>
+    }
+    else
+    {
+        <div class="col-md-4">
+            <div class="dropShadow">
+                <div class="display-Center"><h3>Quality Cleaning</h3></div>
+                <a href="@Url.Action("Index", "Services")"><img async class="center-image" src="@Url.Content("~/Images/img0003.png")" alt="Quality Cleaning" /></a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="dropShadow">
+                <div class="display-Center"><h3>Professional Cleaning</h3></div>
+                <a href="@Url.Action("About", "Home")"><img async class="center-image" src="@Url.Content("~/Images/img0002.png")" alt="Professional Cleaning" /></a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="dropShadow">
+                <div class="display-Center"><h3>Affordable Rates</h3></div>
+                <a href="@Url.Action("Contact", "Home")"><img async class="center-image" src="@Url.Content("~/Images/img0001.png")" alt="Affordable Rates" /></a>
+            </div>
+        </div>
+    }
 </div>
 <div class="clear"></div>
-<div class="index_left">
-    <div class="index_left_bg">
-        <div class="index_left_left">
-            <h3>What we offer</h3>
-            <div class="block">
-                <img async src="@Url.Content("~/Images/img0003.png")" alt="Quality Cleaning" />
-                <p>
-                    <strong>Quality Cleaning</strong><br />
-                    Our cleaning business services provide a clean and healthy workplace. Materials and equipment are included in price and provided by our cleaning team. We believe we offer the best quality service at a sensible and affordable price. Our success is a direct result of our commitment to honesty, reliability and our approach to service quality.
-                </p>
-                <div class="read_more">@Html.ActionLink("read more...", "Index", "Services")</div>
-            </div>
-            <div class="clearTall"></div>
-            <div class="block">
-                <img async src="@Url.Content("~/Images/img0002.png")" alt="Professional Cleaning" />
-                <p>
-                    <strong>Professional Cleaning</strong><br />
-                    Our policy on services quality demands that we must consistently provide an honest, economic and reliable service, which meets the needs of our customers.
-                </p>
-                <div class="read_more">@Html.ActionLink("read more...", "About", "Home")</div>
-            </div>
-            <div class="clearTall"></div>
-            <div class="block">
-                <img async src="@Url.Content("~/Images/img0001.png")" alt="Affordable Rates" />
-                <p>
-                    <strong>Affordable Rates</strong><br />
-                    Call us today to arrange your free, no-obligation in-home estimate for your individual home cleaning
-                    service requirements.
-                </p>
-                <div class="read_more">@Html.ActionLink("read more...", "Contact", "Home")</div>
+<div class="row">
+
+    <h3 class="marginLeft20">What we offer</h3>
+    <div class="col-lg-6" style="border-right: 1px solid black">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="col-lg-5">
+                    <img async src="@Url.Content("~/Images/img0003.png")" alt="Quality Cleaning" />
+                </div>
+                <div class="col-lg-7">
+                    <p>
+                        <strong>Quality Cleaning</strong><br />
+                        Our cleaning business services provide a clean and healthy workplace. Materials and equipment are included in price and provided by our cleaning team. We believe we offer the best quality service at a sensible and affordable price. Our success is a direct result of our commitment to honesty, reliability and our approach to service quality.
+                    </p>
+                    <div class="read_more">@Html.ActionLink("read more...", "Index", "Services")</div>
+                </div>
             </div>
         </div>
-        <div class="index_left_right">
-            <h3>Our Services</h3>
-            <ul class="list_index">
-                <li>@Html.ActionLink("Domestic Cleaning", "DomesticCleaning", "Services")</li>
-                <li>@Html.ActionLink("Spring Clean", "SpringCleaning", "Services")</li>
-                <li>@Html.ActionLink("Oven Clean", "OvenCleaning", "Services")</li>
-                <li>@Html.ActionLink("Commercial Sevice", "ComercialService", "Services")</li>
-                <li>@Html.ActionLink("Ironing at your home", "IroningAtHome", "Services")</li>
-                <li>@Html.ActionLink("End of Tenancy", "EndOfTenancyCleaning", "Services")</li>
-                <li>@Html.ActionLink("Carpet Cleaning", "CarpetCleaning", "Services")</li>
-                <li>@Html.ActionLink("After Builders Cleaning", "AfterBuildersCleaning", "Services")</li>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="col-lg-5">
+                    <img async src="@Url.Content("~/Images/img0002.png")" alt="Professional Cleaning" />
+                </div>
+                <div class="col-lg-7">
+                    <p>
+                        <strong>Professional Cleaning</strong><br />
+                        Our policy on services quality demands that we must consistently provide an honest, economic and reliable service, which meets the needs of our customers.
+                    </p>
+                    <div class="read_more">@Html.ActionLink("read more...", "About", "Home")</div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="col-lg-5">
+                    <img async src="@Url.Content("~/Images/img0001.png")" alt="Affordable Rates" />
+                </div>
+                <div class="col-lg-7">
+                    <p>
+                        <strong>Affordable Rates</strong><br />
+                        Call us today to arrange your free, no-obligation in-home estimate for your individual home cleaning
+                        service requirements.
+                    </p>
+                    <div class="read_more">@Html.ActionLink("read more...", "Contact", "Home")</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-3">
+        <h3>Our Services</h3>
+        <ul class="list_index">
+            <li>@Html.ActionLink("Domestic Cleaning", "DomesticCleaning", "Services")</li>
+            <li>@Html.ActionLink("Spring Clean", "SpringCleaning", "Services")</li>
+            <li>@Html.ActionLink("Oven Clean", "OvenCleaning", "Services")</li>
+            <li>@Html.ActionLink("Commercial Sevice", "ComercialService", "Services")</li>
+            <li>@Html.ActionLink("Ironing at your home", "IroningAtHome", "Services")</li>
+            <li>@Html.ActionLink("End of Tenancy", "EndOfTenancyCleaning", "Services")</li>
+            <li>@Html.ActionLink("Carpet Cleaning", "CarpetCleaning", "Services")</li>
+            <li>@Html.ActionLink("After Builders Cleaning", "AfterBuildersCleaning", "Services")</li>
+        </ul>
+    </div>
+    <div class="col-lg-3">
+        <h3>Company News</h3>
+        <p>
+            <strong>We offer our services</strong><br />
+            <ul>
+                <li>a daily,</li>
+                <li>weekly,</li>
+                <li>fortnightly,</li>
+                <li>monthly basis,</li>
+                <li>one time houseclean </li>
             </ul>
-        </div>
-        <div class="clear"></div>
+        </p>
+        <div class="read_more">@Html.ActionLink("read more...", "Contact", "Home")</div>
+        <div class="clearMed"></div>
+        <div class="lineTall"></div>
+        <p>
+            <img async src="@Url.Content("~/Images/satisfation.jpg")" alt="Customer Satisfaction" />
+
+            <strong>100% Customer Satisfaction</strong><br />
+            @LogoNameHelper.DisplayLogoName() offer the must highest level of quality,service and value to each and every customer
+        </p>
+        <div class="read_more">@Html.ActionLink("read more...", "CustomerSatisfaction", "ReadMore")</div>
+        <div class="clearMed"></div>
+        <div class="lineTall"></div>
+        <p>
+            <img async src="@Url.Content("~/Images/whyus.jpg")" alt="Why Us" /><br />
+            <strong>Why Choose us</strong><br />
+            Universe   Cleaning is known for its friendly cleaning services, meticulous attention to detail and consistent  high standards.
+        </p>
+        <div class="read_more">@Html.ActionLink("read more...", "WhyUs", "ReadMore")</div>
     </div>
 </div>
-<div class="index_right">
-    <h3>Company News</h3>
-    <p>
-        <strong>We offer our services</strong><br />
-        <ul>
-            <li>a daily,</li>
-            <li>weekly,</li>
-            <li>fortnightly,</li>
-            <li>monthly basis,</li>
-            <li>one time houseclean </li>
-        </ul>
-    </p>
-    <div class="read_more">@Html.ActionLink("read more...", "Contact", "Home")</div>
-    <div class="clearMed"></div>
-    <div class="lineTall"></div>
-    <p>
-        <img async src="@Url.Content("~/Images/satisfation.jpg")" alt="Customer Satisfaction" />
+@section scripts{
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.min.js"></script>
 
-        <strong>100% Customer Satisfaction</strong><br />
-        Universe Cleaning offer the must highest level of quality,service and value to each and every customer
-    </p>
-    <div class="read_more">@Html.ActionLink("read more...", "CustomerSatisfaction", "ReadMore")</div>
-    <div class="clearMed"></div>
-    <div class="lineTall"></div>
-    <p>
-        <img async src="@Url.Content("~/Images/whyus.jpg")" alt="Why Us" /><br />
-        <strong>Why Choose us</strong><br />
-        Universe   Cleaning is known for its friendly cleaning services, meticulous attention to detail and consistent  high standards.
-    </p>
-    <div class="read_more">@Html.ActionLink("read more...", "WhyUs", "ReadMore")</div>
-</div>
+}
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        $('.testimonials').slick({
+            autoplay: true,
+            centerMode: true,
+            centerPadding: '0px',
+            slidesToShow: 2,
+            responsive: [
+              {
+                  breakpoint: 768,
+                  settings: {
+                      arrows: false,
+                      centerMode: true,
+                      centerPadding: '0px',
+                      slidesToShow: 2
+                  }
+              },
+              {
+                  breakpoint: 480,
+                  settings: {
+                      arrows: false,
+                      centerMode: true,
+                      centerPadding: '0px',
+                      slidesToShow: 1
+                  }
+              }]
+        });
+    });
+</script>

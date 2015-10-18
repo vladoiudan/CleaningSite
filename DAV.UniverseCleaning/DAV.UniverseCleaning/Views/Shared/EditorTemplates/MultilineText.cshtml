@@ -5,7 +5,7 @@
 @{
     var attributes = new Dictionary<string, object>();
     string cssClass = ViewData["class"] as string;
-    cssClass = String.Concat(cssClass, " ", "text-box multi-line");
+    cssClass = String.Concat(cssClass, " ", "form-control");
     if (ViewData.ModelMetadata.AdditionalValues.ContainsKey("StringTrim"))
     {
         cssClass = String.Concat(cssClass, " ", "stringtrim");
