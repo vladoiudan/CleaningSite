@@ -20,12 +20,10 @@
     testinonials.Add(new TestimonialModel() { PersonName = "Sue", Location = "", Date = new DateTime(2014, 7, 1), Content = "They are all so friendly and I feel like they are part of our family now. My kids enjoy seeing them each week. Excellent and friendly service every time they come." });
     testinonials.Add(new TestimonialModel() { PersonName = "Vanessa", Location = "", Date = new DateTime(2014, 7, 1), Content = "Stefan and Anca have been cleaning our house for about a month now. They are absolutely terrific. Always cheerful, very focused on the task at hand and extremely flexible. They have never let me down and I honestly dont think I could imagine life without them now! They really have lifted some of the load I was carrying!" });
 }
-<link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/slick.css")" />
-<link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/slick-theme.css")" />
+@Styles.Render("~/Content/slick")
 <!-- top -->
 <div class="top">
-    <div></div>
-    <div >
+    <div>
         <div id="slider-wrapper">
             <div id="slider">
                 @for (int i = 1; i <= 22; i++)
@@ -35,175 +33,172 @@
             </div>
         </div>
     </div>
-<div class="clear"></div>
-<br />
-<p>
-    @LogoNameHelper.DisplayLogoName() offers a flexible home cleaning service at an affordable price (no matter whether a house or a flat clean is required), based on a no-obligation, free estimate carried out in your home. Uniformed, fully insured staff typically work in teams of two to efficiently clean your home.
-</p>
-<div class="row">
-    @if (showTestimonials)
-    {
-        <h3 class="marginLeft20">Testimonials</h3>
-        <div class="col-lg-12">
-            <div class="testimonials">
-                @foreach (var testimonialModel in testinonials)
-                {
-                    <div class="well well-lg testimonial-box">
-                        <div class="panel-title">(@testimonialModel.Date.ToString("D"))&nbsp;<strong>@testimonialModel.PersonTitle @testimonialModel.PersonName@( !string.IsNullOrEmpty(testimonialModel.Location) ? "," + testimonialModel.Location : "")</strong> said:</div>
-                        <p>@testimonialModel.Content</p>
+    <div class="clear"></div>
+    <br />
+    <p>
+        @LogoNameHelper.DisplayLogoName() offers a flexible home cleaning service at an affordable price (no matter whether a house or a flat clean is required), based on a no-obligation, free estimate carried out in your home. Uniformed, fully insured staff typically work in teams of two to efficiently clean your home.
+    </p>
+    <div class="row">
+        @if (showTestimonials)
+        {
+            <h3 class="marginLeft20">Testimonials</h3>
+            <div class="col-lg-12">
+                <div class="testimonials">
+                    @foreach (var testimonialModel in testinonials)
+                    {
+                        <div class="well well-lg testimonial-box">
+                            <div class="panel-title">(@testimonialModel.Date.ToString("D"))&nbsp;<strong>@testimonialModel.PersonTitle @testimonialModel.PersonName@( !string.IsNullOrEmpty(testimonialModel.Location) ? "," + testimonialModel.Location : "")</strong> said:</div>
+                            <p>@testimonialModel.Content</p>
+                        </div>
+                    }
+                </div>
+            </div>
+        }
+        else
+        {
+            <div class="col-md-4">
+                <div class="dropShadow">
+                    <div class="display-Center"><h3>Quality Cleaning</h3></div>
+                    <a href="@Url.Action("Index", "Services")"><img async class="center-image" src="@Url.Content("~/Images/img0003.png")" alt="Quality Cleaning" /></a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="dropShadow">
+                    <div class="display-Center"><h3>Professional Cleaning</h3></div>
+                    <a href="@Url.Action("About", "Home")"><img async class="center-image" src="@Url.Content("~/Images/img0002.png")" alt="Professional Cleaning" /></a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="dropShadow">
+                    <div class="display-Center"><h3>Affordable Rates</h3></div>
+                    <a href="@Url.Action("Contact", "Home")"><img async class="center-image" src="@Url.Content("~/Images/img0001.png")" alt="Affordable Rates" /></a>
+                </div>
+            </div>
+        }
+    </div>
+    <div class="row">
+        <h3 class="marginLeft20">What we offer</h3>
+        <div class="col-lg-6" style="border-right: 1px solid black">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="col-lg-5">
+                        <img async src="@Url.Content("~/Images/img0003.png")" alt="Quality Cleaning" />
                     </div>
-                }
+                    <div class="col-lg-7">
+                        <p>
+                            <strong>Quality Cleaning</strong><br />
+                            Our cleaning business services provide a clean and healthy workplace. Materials and equipment are included in price and provided by our cleaning team. We believe we offer the best quality service at a sensible and affordable price. Our success is a direct result of our commitment to honesty, reliability and our approach to service quality.
+                        </p>
+                        <div class="read_more">@Html.ActionLink("read more...", "Index", "Services")</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="col-lg-5">
+                        <img async src="@Url.Content("~/Images/img0002.png")" alt="Professional Cleaning" />
+                    </div>
+                    <div class="col-lg-7">
+                        <p>
+                            <strong>Professional Cleaning</strong><br />
+                            Our policy on services quality demands that we must consistently provide an honest, economic and reliable service, which meets the needs of our customers.
+                        </p>
+                        <div class="read_more">@Html.ActionLink("read more...", "About", "Home")</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="col-lg-5">
+                        <img async src="@Url.Content("~/Images/img0001.png")" alt="Affordable Rates" />
+                    </div>
+                    <div class="col-lg-7">
+                        <p>
+                            <strong>Affordable Rates</strong><br />
+                            Call us today to arrange your free, no-obligation in-home estimate for your individual home cleaning
+                            service requirements.
+                        </p>
+                        <div class="read_more">@Html.ActionLink("read more...", "Contact", "Home")</div>
+                    </div>
+                </div>
             </div>
         </div>
-    }
-    else
-    {
-        <div class="col-md-4">
-            <div class="dropShadow">
-                <div class="display-Center"><h3>Quality Cleaning</h3></div>
-                <a href="@Url.Action("Index", "Services")"><img async class="center-image" src="@Url.Content("~/Images/img0003.png")" alt="Quality Cleaning" /></a>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="dropShadow">
-                <div class="display-Center"><h3>Professional Cleaning</h3></div>
-                <a href="@Url.Action("About", "Home")"><img async class="center-image" src="@Url.Content("~/Images/img0002.png")" alt="Professional Cleaning" /></a>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="dropShadow">
-                <div class="display-Center"><h3>Affordable Rates</h3></div>
-                <a href="@Url.Action("Contact", "Home")"><img async class="center-image" src="@Url.Content("~/Images/img0001.png")" alt="Affordable Rates" /></a>
-            </div>
-        </div>
-    }
-</div>
-<div class="clear"></div>
-<div class="row">
 
-    <h3 class="marginLeft20">What we offer</h3>
-    <div class="col-lg-6" style="border-right: 1px solid black">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="col-lg-5">
-                    <img async src="@Url.Content("~/Images/img0003.png")" alt="Quality Cleaning" />
-                </div>
-                <div class="col-lg-7">
-                    <p>
-                        <strong>Quality Cleaning</strong><br />
-                        Our cleaning business services provide a clean and healthy workplace. Materials and equipment are included in price and provided by our cleaning team. We believe we offer the best quality service at a sensible and affordable price. Our success is a direct result of our commitment to honesty, reliability and our approach to service quality.
-                    </p>
-                    <div class="read_more">@Html.ActionLink("read more...", "Index", "Services")</div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="col-lg-5">
-                    <img async src="@Url.Content("~/Images/img0002.png")" alt="Professional Cleaning" />
-                </div>
-                <div class="col-lg-7">
-                    <p>
-                        <strong>Professional Cleaning</strong><br />
-                        Our policy on services quality demands that we must consistently provide an honest, economic and reliable service, which meets the needs of our customers.
-                    </p>
-                    <div class="read_more">@Html.ActionLink("read more...", "About", "Home")</div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="col-lg-5">
-                    <img async src="@Url.Content("~/Images/img0001.png")" alt="Affordable Rates" />
-                </div>
-                <div class="col-lg-7">
-                    <p>
-                        <strong>Affordable Rates</strong><br />
-                        Call us today to arrange your free, no-obligation in-home estimate for your individual home cleaning
-                        service requirements.
-                    </p>
-                    <div class="read_more">@Html.ActionLink("read more...", "Contact", "Home")</div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-lg-3">
-        <h3>Our Services</h3>
-        <ul class="list_index">
-            <li>@Html.ActionLink("Domestic Cleaning", "DomesticCleaning", "Services")</li>
-            <li>@Html.ActionLink("Spring Clean", "SpringCleaning", "Services")</li>
-            <li>@Html.ActionLink("Oven Clean", "OvenCleaning", "Services")</li>
-            <li>@Html.ActionLink("Commercial Sevice", "ComercialService", "Services")</li>
-            <li>@Html.ActionLink("Ironing at your home", "IroningAtHome", "Services")</li>
-            <li>@Html.ActionLink("End of Tenancy", "EndOfTenancyCleaning", "Services")</li>
-            <li>@Html.ActionLink("Carpet Cleaning", "CarpetCleaning", "Services")</li>
-            <li>@Html.ActionLink("After Builders Cleaning", "AfterBuildersCleaning", "Services")</li>
-        </ul>
-    </div>
-    <div class="col-lg-3">
-        <h3>Company News</h3>
-        <p>
-            <strong>We offer our services</strong><br />
-            <ul>
-                <li>a daily,</li>
-                <li>weekly,</li>
-                <li>fortnightly,</li>
-                <li>monthly basis,</li>
-                <li>one time houseclean </li>
+        <div class="col-lg-3">
+            <h3>Our Services</h3>
+            <ul class="list_index">
+                <li>@Html.ActionLink("Domestic Cleaning", "DomesticCleaning", "Services")</li>
+                <li>@Html.ActionLink("Spring Clean", "SpringCleaning", "Services")</li>
+                <li>@Html.ActionLink("Oven Clean", "OvenCleaning", "Services")</li>
+                <li>@Html.ActionLink("Commercial Sevice", "ComercialService", "Services")</li>
+                <li>@Html.ActionLink("Ironing at your home", "IroningAtHome", "Services")</li>
+                <li>@Html.ActionLink("End of Tenancy", "EndOfTenancyCleaning", "Services")</li>
+                <li>@Html.ActionLink("Carpet Cleaning", "CarpetCleaning", "Services")</li>
+                <li>@Html.ActionLink("After Builders Cleaning", "AfterBuildersCleaning", "Services")</li>
             </ul>
-        </p>
-        <div class="read_more">@Html.ActionLink("read more...", "Contact", "Home")</div>
-        <div class="clearMed"></div>
-        <div class="lineTall"></div>
-        <p>
-            <img async src="@Url.Content("~/Images/satisfation.jpg")" alt="Customer Satisfaction" />
+        </div>
+        <div class="col-lg-3">
+            <h3>Company News</h3>
+            <p>
+                <strong>We offer our services</strong><br />
+                <ul>
+                    <li>a daily,</li>
+                    <li>weekly,</li>
+                    <li>fortnightly,</li>
+                    <li>monthly basis,</li>
+                    <li>one time houseclean </li>
+                </ul>
+            </p>
+            <div class="read_more">@Html.ActionLink("read more...", "Contact", "Home")</div>
+            <div class="clearMed"></div>
+            <div class="lineTall"></div>
+            <p>
+                <img async src="@Url.Content("~/Images/satisfation.jpg")" alt="Customer Satisfaction" />
 
-            <strong>100% Customer Satisfaction</strong><br />
-            @LogoNameHelper.DisplayLogoName() offer the must highest level of quality,service and value to each and every customer
-        </p>
-        <div class="read_more">@Html.ActionLink("read more...", "CustomerSatisfaction", "ReadMore")</div>
-        <div class="clearMed"></div>
-        <div class="lineTall"></div>
-        <p>
-            <img async src="@Url.Content("~/Images/whyus.jpg")" alt="Why Us" /><br />
-            <strong>Why Choose us</strong><br />
-            Universe   Cleaning is known for its friendly cleaning services, meticulous attention to detail and consistent  high standards.
-        </p>
-        <div class="read_more">@Html.ActionLink("read more...", "WhyUs", "ReadMore")</div>
+                <strong>100% Customer Satisfaction</strong><br />
+                @LogoNameHelper.DisplayLogoName() offer the must highest level of quality,service and value to each and every customer
+            </p>
+            <div class="read_more">@Html.ActionLink("read more...", "CustomerSatisfaction", "ReadMore")</div>
+            <div class="clearMed"></div>
+            <div class="lineTall"></div>
+            <p>
+                <img async src="@Url.Content("~/Images/whyus.jpg")" alt="Why Us" /><br />
+                <strong>Why Choose us</strong><br />
+                Universe   Cleaning is known for its friendly cleaning services, meticulous attention to detail and consistent  high standards.
+            </p>
+            <div class="read_more">@Html.ActionLink("read more...", "WhyUs", "ReadMore")</div>
+        </div>
     </div>
-</div>
-@section scripts{
-    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.min.js"></script>
+    @section scripts{
+        <script type="text/javascript" src="~/Scripts/slick.min.js"></script>
+    }
+    <script type="text/javascript">
 
-}
-<script type="text/javascript">
-
-    $(document).ready(function () {
-        $('.testimonials').slick({
-            autoplay: true,
-            centerMode: true,
-            centerPadding: '0px',
-            slidesToShow: 2,
-            responsive: [
-              {
-                  breakpoint: 768,
-                  settings: {
-                      arrows: false,
-                      centerMode: true,
-                      centerPadding: '0px',
-                      slidesToShow: 1
-                  }
-              },
-              {
-                  breakpoint: 480,
-                  settings: {
-                      arrows: false,
-                      centerMode: true,
-                      centerPadding: '0px',
-                      slidesToShow: 1
-                  }
-              }]
+        $(document).ready(function () {
+            $('.testimonials').slick({
+                autoplay: true,
+                centerMode: true,
+                centerPadding: '0px',
+                slidesToShow: 2,
+                responsive: [
+                  {
+                      breakpoint: 768,
+                      settings: {
+                          arrows: false,
+                          centerMode: true,
+                          centerPadding: '0px',
+                          slidesToShow: 1
+                      }
+                  },
+                  {
+                      breakpoint: 480,
+                      settings: {
+                          arrows: false,
+                          centerMode: true,
+                          centerPadding: '0px',
+                          slidesToShow: 1
+                      }
+                  }]
+            });
         });
-    });
-</script>
+    </script>
