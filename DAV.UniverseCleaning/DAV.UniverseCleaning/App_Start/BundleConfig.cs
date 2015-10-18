@@ -25,6 +25,10 @@ namespace DAV.UniverseCleaning
                       "~/Content/bootstrap.css",
                       "~/Content/menu.css",
                       "~/Content/site.css"));
+
+            bundles.Add(new StyleBundle("~/Content/slick").Include(
+                     "~/Content/slick.css",
+                     "~/Content/slick-theme.css"));
         }
     }
 }
