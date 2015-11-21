@@ -1,0 +1,29 @@
+﻿@using DAV.UniverseCleaning.App_LocalResources
+@{
+    ViewBag.Title = Resource.PhotoGalleryTitle;
+    ViewBag.Keywords = Resource.PhotoGalleryKeywords;
+    ViewBag.Description = Resource.PhotoGalleryDescription;
+    var imagesCount = 15;
+}
+@Styles.Render("~/Content/slick")
+<div class="top">
+    <div id="slider-wrapper">
+        <div id="slider">
+            @for (int i = 1; i <= imagesCount; i++)
+            {
+                <img async src='@Url.Content("~/Images/PhotoGallery/images" + @i+".jpg")' alt="Cleaning" />
+            }
+        </div>
+    </div>
+</div>
+
+@section scripts{
+    <script type="text/javascript" src="~/Scripts/slick.min.js"></script>
+    <script type="text/javascript">
+            $(function () {
+                $("#slider").excoloSlider({
+                    autoSize: true
+                });
+            });
+    </script>
+}   

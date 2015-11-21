@@ -4,9 +4,16 @@ namespace DAV.UniverseCleaning.Models
 {
     public class ContactMessage
     {
-        [Required(ErrorMessage = "Name is required!")]
-        public string Name { get; set; }
-        
+        [Required(ErrorMessage = "First Name is required!")]
+        [Display(Name ="First Name")]
+        public string FirstName { get; set; }
+
+        [Required(ErrorMessage = "Last Name is required!")]
+        [Display(Name ="Last Name")]
+        public string LastName { get; set; }
+
+        public string Address { get; set; }
+
         [Required(ErrorMessage = "Email is required!")]
         [EmailAddress]
         [Display(Name = "Email")]

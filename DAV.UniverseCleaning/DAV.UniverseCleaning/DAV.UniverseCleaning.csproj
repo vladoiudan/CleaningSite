@@ -22,6 +22,7 @@
     <IISExpressUseClassicPipelineMode />
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
     <RestorePackages>true</RestorePackages>
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -127,6 +128,7 @@
     <Compile Include="Helpers\IMailService.cs" />
     <Compile Include="Helpers\SmtpMailService.cs" />
     <Compile Include="Models\ContactMessage.cs" />
+    <Compile Include="Models\Offer.cs" />
     <Compile Include="Models\TestimonialModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -159,6 +161,21 @@
     <Content Include="Images\Carousel\images7.jpg" />
     <Content Include="Images\Carousel\images8.jpg" />
     <Content Include="Images\Carousel\images9.jpg" />
+    <Content Include="Images\PhotoGallery\images1.JPG" />
+    <Content Include="Images\PhotoGallery\images10.JPG" />
+    <Content Include="Images\PhotoGallery\images11.JPG" />
+    <Content Include="Images\PhotoGallery\images12.JPG" />
+    <Content Include="Images\PhotoGallery\images13.JPG" />
+    <Content Include="Images\PhotoGallery\images14.JPG" />
+    <Content Include="Images\PhotoGallery\images15.JPG" />
+    <Content Include="Images\PhotoGallery\images2.JPG" />
+    <Content Include="Images\PhotoGallery\images3.JPG" />
+    <Content Include="Images\PhotoGallery\images4.JPG" />
+    <Content Include="Images\PhotoGallery\images5.JPG" />
+    <Content Include="Images\PhotoGallery\images6.JPG" />
+    <Content Include="Images\PhotoGallery\images7.JPG" />
+    <Content Include="Images\PhotoGallery\images8.JPG" />
+    <Content Include="Images\PhotoGallery\images9.JPG" />
     <Content Include="Scripts\slick.min.js" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -282,6 +299,8 @@
     <Content Include="Views\Services\ComercialService.cshtml" />
     <Content Include="Views\Services\SpringCleaning.cshtml" />
     <Content Include="Views\Services\CarpetCleaning.cshtml" />
+    <Content Include="Views\Home\PhotoGallery.cshtml" />
+    <Content Include="Views\Home\TermsAndConditions.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -4,6 +4,7 @@
     ViewBag.Title = Resource.HomePageTitle;
     ViewBag.Keywords = Resource.HomeKeywords;
     ViewBag.Description = Resource.HomeDescription;
+    var imagesCount = 22;
     bool showTestimonials = true;
     var testinonials = new List<TestimonialModel>();
     testinonials.Add(new TestimonialModel() { PersonTitle = "Mr", PersonName = "W", Date = new DateTime(2015, 09, 24), Content = "I have used many cleaning firms but universe are far the best one Ive ever used and will use. Keep up the good work ! x" });
@@ -26,9 +27,9 @@
     <div>
         <div id="slider-wrapper">
             <div id="slider">
-                @for (int i = 1; i <= 22; i++)
+                @for (int i = 1; i <= imagesCount; i++)
                 {
-                    <img async src='@Url.Content("~/Images/Carousel/images" + @i+".jpg")' alt="Cleaning" />
+                <img async src='@Url.Content("~/Images/Carousel/images" + @i+".jpg")' alt="Cleaning" />
                 }
             </div>
         </div>
@@ -41,39 +42,39 @@
     <div class="row">
         @if (showTestimonials)
         {
-            <h3 class="marginLeft20">Testimonials</h3>
-            <div class="col-lg-12">
-                <div class="testimonials">
-                    @foreach (var testimonialModel in testinonials)
+        <h3 class="marginLeft20">Testimonials</h3>
+        <div class="col-lg-12">
+            <div class="testimonials">
+                @foreach (var testimonialModel in testinonials)
                     {
-                        <div class="well well-lg testimonial-box">
-                            <div class="panel-title">(@testimonialModel.Date.ToString("D"))&nbsp;<strong>@testimonialModel.PersonTitle @testimonialModel.PersonName@( !string.IsNullOrEmpty(testimonialModel.Location) ? "," + testimonialModel.Location : "")</strong> said:</div>
-                            <p>@testimonialModel.Content</p>
-                        </div>
-                    }
+                <div class="well well-lg testimonial-box">
+                    <div class="panel-title">(@testimonialModel.Date.ToString("D"))&nbsp;<strong>@testimonialModel.PersonTitle @testimonialModel.PersonName@( !string.IsNullOrEmpty(testimonialModel.Location) ? "," + testimonialModel.Location : "")</strong> said:</div>
+                    <p>@testimonialModel.Content</p>
                 </div>
+                    }
             </div>
+        </div>
         }
         else
         {
-            <div class="col-md-4">
-                <div class="dropShadow">
-                    <div class="display-Center"><h3>Quality Cleaning</h3></div>
-                    <a href="@Url.Action("Index", "Services")"><img async class="center-image" src="@Url.Content("~/Images/img0003.png")" alt="Quality Cleaning" /></a>
-                </div>
+        <div class="col-md-4">
+            <div class="dropShadow">
+                <div class="display-Center"><h3>Quality Cleaning</h3></div>
+                <a href="@Url.Action("Index", "Services")"><img async class="center-image" src="@Url.Content("~/Images/img0003.png")" alt="Quality Cleaning" /></a>
             </div>
-            <div class="col-md-4">
-                <div class="dropShadow">
-                    <div class="display-Center"><h3>Professional Cleaning</h3></div>
-                    <a href="@Url.Action("About", "Home")"><img async class="center-image" src="@Url.Content("~/Images/img0002.png")" alt="Professional Cleaning" /></a>
-                </div>
+        </div>
+        <div class="col-md-4">
+            <div class="dropShadow">
+                <div class="display-Center"><h3>Professional Cleaning</h3></div>
+                <a href="@Url.Action("About", "Home")"><img async class="center-image" src="@Url.Content("~/Images/img0002.png")" alt="Professional Cleaning" /></a>
             </div>
-            <div class="col-md-4">
-                <div class="dropShadow">
-                    <div class="display-Center"><h3>Affordable Rates</h3></div>
-                    <a href="@Url.Action("Contact", "Home")"><img async class="center-image" src="@Url.Content("~/Images/img0001.png")" alt="Affordable Rates" /></a>
-                </div>
+        </div>
+        <div class="col-md-4">
+            <div class="dropShadow">
+                <div class="display-Center"><h3>Affordable Rates</h3></div>
+                <a href="@Url.Action("Contact", "Home")"><img async class="center-image" src="@Url.Content("~/Images/img0001.png")" alt="Affordable Rates" /></a>
             </div>
+        </div>
         }
     </div>
     <div class="row">
@@ -169,36 +170,45 @@
             <div class="read_more">@Html.ActionLink("read more...", "WhyUs", "ReadMore")</div>
         </div>
     </div>
-    @section scripts{
-        <script type="text/javascript" src="~/Scripts/slick.min.js"></script>
-    }
+</div>
+@section scripts{
+    <script type="text/javascript" src="~/Scripts/slick.min.js"></script>
     <script type="text/javascript">
-
-        $(document).ready(function () {
-            $('.testimonials').slick({
-                autoplay: true,
-                centerMode: true,
-                centerPadding: '0px',
-                slidesToShow: 2,
-                responsive: [
-                  {
-                      breakpoint: 768,
-                      settings: {
-                          arrows: false,
-                          centerMode: true,
-                          centerPadding: '0px',
-                          slidesToShow: 1
-                      }
-                  },
-                  {
-                      breakpoint: 480,
-                      settings: {
-                          arrows: false,
-                          centerMode: true,
-                          centerPadding: '0px',
-                          slidesToShow: 1
-                      }
-                  }]
+        $(function () {
+            $("#slider").excoloSlider({
+                autoSize: true,
+                height: 359
             });
         });
     </script>
+}
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        $('.testimonials').slick({
+            autoplay: true,
+            centerMode: true,
+            centerPadding: '0px',
+            slidesToShow: 2,
+            responsive: [
+              {
+                  breakpoint: 768,
+                  settings: {
+                      arrows: false,
+                      centerMode: true,
+                      centerPadding: '0px',
+                      slidesToShow: 1
+                  }
+              },
+              {
+                  breakpoint: 480,
+                  settings: {
+                      arrows: false,
+                      centerMode: true,
+                      centerPadding: '0px',
+                      slidesToShow: 1
+                  }
+              }]
+        });
+    });
+</script>

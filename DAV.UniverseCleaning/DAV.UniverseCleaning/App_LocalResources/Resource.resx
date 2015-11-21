@@ -282,4 +282,13 @@
   <data name="MobilePhone" xml:space="preserve">
     <value>0746 313 7337</value>
   </data>
+  <data name="PhotoGalleryDescription" xml:space="preserve">
+    <value>Universe Cleaning offers a Professional and Quality Cleaning at an affordable price. Fully insured staff work in teams of two to efficiently clean your home.</value>
+  </data>
+  <data name="PhotoGalleryKeywords" xml:space="preserve">
+    <value>Bishops Stortford Cleaning, Bishop Cleaning, Cheshunt Cleaning, Hertford Cleaning, Hoddeston Cleaning, Harlow Cleaning, Roydon Cleaning, Broxborne Cleaning</value>
+  </data>
+  <data name="PhotoGalleryTitle" xml:space="preserve">
+    <value>Photo Gallery</value>
+  </data>
 </root>

@@ -32,8 +32,8 @@ namespace DAV.UniverseCleaning.Controllers
                 {
                     IMailService mailService = new SmtpMailService();
                     const string email = "info@universecleaning.co.uk";
-                    mailService.SendMail(data.Email, string.Format("Contact Form Submission: {0}", data.Name),
-                        data.Message, false, email);
+                    mailService.SendMail(data.Email, string.Format("Contact Form Submission: {0} {1}", data.FirstName, data.LastName),
+                       string.Format("Address: {0}, \n Message: {1}", data.Address, data.Message), false, email);
                     ViewBag.SuccessMessage = "We have received your message and it will be processed soon. Thank you.";
                 }
                 catch (Exception ex)
@@ -50,6 +50,16 @@ namespace DAV.UniverseCleaning.Controllers
         }
 
         public ActionResult Testimonials()
+        {
+            return View();
+        }
+
+        public ActionResult PhotoGallery()
+        {
+            return View();
+        }
+
+        public ActionResult TermsAndConditions()
         {
             return View();
         }

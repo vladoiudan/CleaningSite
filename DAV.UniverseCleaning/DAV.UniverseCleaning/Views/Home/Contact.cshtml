@@ -16,9 +16,9 @@
                 Bishops Stortford<br />
                 CM233YP<br />
                 United Kingdom<br />
-                <abbr title="Mobile">P:</abbr>
+                <abbr title="Mobile">M:</abbr>
                 @Resource.MobilePhone<br />
-                <abbr title="Landline">P:</abbr>
+                <abbr title="Landline">L:</abbr>
                 @Resource.Landline<br />
                 <strong>Info:</strong>   <a itemprop="email" href="mailto:info@universecleaning.co.uk">info@universecleaning.co.uk</a><br />
             </address>
@@ -31,8 +31,12 @@
                 if (string.IsNullOrEmpty(ViewBag.SuccessMessage))
                 {
                     @Html.ValidationSummary()
-                    ViewBag.Placeholder = "Johnny Smith";
-                    @Html.EditorFor(x => x.Name)
+                    ViewBag.Placeholder = "Johnny";
+                    @Html.EditorFor(x => x.FirstName)
+                    ViewBag.Placeholder = "Smith";
+                    @Html.EditorFor(x => x.LastName)
+                    ViewBag.Placeholder = "Give us your address...";
+                    @Html.EditorFor(x => x.Address)
                     ViewBag.Placeholder = "example@mail.com";
                     @Html.EditorFor(x => x.Email, "String")
                     ViewBag.Placeholder = "Write something to us";

@@ -1,8 +1,5 @@
 ﻿@helper SocialMediaButtons(bool singleLine=false)
 {
-    <div>
-        <div class="clearMed">
-        </div>
         <div class="row">
             <div class="pull-right">
                 <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
@@ -17,10 +14,6 @@
                 <!-- Place this tag where you want the +1 button to render. -->
                 <div class="g-plusone" data-annotation="inline" data-width="200"></div>
             </div>
-            @if (!singleLine)
-            {
-                <div class="row">
-                    <div class="pull-right">
                         <script async defer>
                             (function(d, s, id) {
                                 var js, fjs = d.getElementsByTagName(s)[0];
@@ -33,26 +26,6 @@
                         </script>
 
                         <div class="fb-like" data-width="300" data-href="@DAV.UniverseCleaning.App_LocalResources.Resource.SiteUrl" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
-                    </div>
-                </div>
-            }
-            else
-            {
-                <div class="pull-right">
-                    <script async defer>
-                        (function (d, s, id) {
-                            var js, fjs = d.getElementsByTagName(s)[0];
-                            if (d.getElementById(id)) return;
-                            js = d.createElement(s); js.id = id;
-                            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
-                            fjs.parentNode.insertBefore(js, fjs);
-                        }(document, 'script', 'facebook-jssdk'));</script>
-
-                    <div class="fb-like" data-width="300" data-href="@DAV.UniverseCleaning.App_LocalResources.Resource.SiteUrl" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
-                </div>
-            }
         </div>
-        
-    </div>
 }
 

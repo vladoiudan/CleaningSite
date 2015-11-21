@@ -18,7 +18,17 @@
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/scripts")
-
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefor
+            e(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-70401195-1', 'auto');
+        ga('send', 'pageview');
+    </script>
 </head>
 
 <body>
@@ -30,59 +40,72 @@
             </div>
             <div class="navbar-right">
                 <div>
-                    @SocialMediaHelper.SocialMediaButtons()
+                    <div>
+                        <div class="clearMed">
+                        </div>
+                        @SocialMediaHelper.SocialMediaButtons()
+                    </div>
                 </div>
                 <div class="callEstimate">
                     <div class="clearMed"></div>
                     <span>CALL FOR A FREE ESTIMATE</span>
                 </div>
                 <div>
-                    <abbr title="Mobile">M:</abbr>
-                    @Resource.MobilePhone
-                    <abbr title="Landline">L:</abbr>
-                    @Resource.Landline
+                    <div class="pull-left">
+                        <span><abbr title="Mobile">M:</abbr></span>
+                        <p class="textRight">
+                            <strong>@Resource.MobilePhone</strong>
+                        </p>
+                    </div>
+                    &nbsp;&nbsp;
+                    <div class="pull-right">
+                        <span><abbr title="Landline">L:</abbr></span>
+                        <p class="textRight">
+                            <strong>@Resource.Landline</strong>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div>
-            <nav class="navbar navbar-default" role="navigation">
-                <div class="container-fluid">
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                    </div>
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
 
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav">
-                            <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                            <li class="dropdown">
-                                <a href="@Url.Action("Index", "Services")" class="dropdown-toggle">Services <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    <li>@Html.ActionLink("Domestic Cleaning", "DomesticCleaning", "Services")</li>
-                                    <li>@Html.ActionLink("Spring Clean", "SpringCleaning", "Services")</li>
-                                    <li>@Html.ActionLink("Oven Cleaning", "OvenCleaning", "Services")</li>
-                                    <li>@Html.ActionLink("Comercial Service", "ComercialService", "Services")</li>
-                                    <li>@Html.ActionLink("Ironing at your home", "IroningAtHome", "Services")</li>
-                                    <li>@Html.ActionLink("End of Tenancy", "EndOfTenancyCleaning", "Services")</li>
-                                    <li>@Html.ActionLink("Carpet Cleaning", "CarpetCleaning", "Services")</li>
-                                    <li>@Html.ActionLink("After Builders Clean", "AfterBuildersCleaning", "Services")</li>
-                                </ul>
-                            </li>
-                            <li>@Html.ActionLink("Offers", "Offers", "Home")</li>
-                            <li>@Html.ActionLink("Testimonials", "Testimonials", "Home")</li>
-                            <li>@Html.ActionLink("About Us", "About", "Home")</li>
-                            <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                        </ul>
-                    </div><!-- /.navbar-collapse -->
-                </div><!-- /.container-fluid -->
-            </nav>
-        </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                        <li class="dropdown">
+                            <a href="@Url.Action("Index", "Services")" class="dropdown-toggle">Services <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li>@Html.ActionLink("Domestic Cleaning", "DomesticCleaning", "Services")</li>
+                                <li>@Html.ActionLink("Spring Clean", "SpringCleaning", "Services")</li>
+                                <li>@Html.ActionLink("Oven Cleaning", "OvenCleaning", "Services")</li>
+                                <li>@Html.ActionLink("Comercial Service", "ComercialService", "Services")</li>
+                                <li>@Html.ActionLink("Ironing at your home", "IroningAtHome", "Services")</li>
+                                <li>@Html.ActionLink("End of Tenancy", "EndOfTenancyCleaning", "Services")</li>
+                                <li>@Html.ActionLink("Carpet Cleaning", "CarpetCleaning", "Services")</li>
+                                <li>@Html.ActionLink("After Builders Clean", "AfterBuildersCleaning", "Services")</li>
+                            </ul>
+                        </li>
+                        <li>@Html.ActionLink("Offers", "Offers", "Home")</li>
+                        <li>@Html.ActionLink("Testimonials", "Testimonials", "Home")</li>
+                        <li>@Html.ActionLink("About Us", "About", "Home")</li>
+                        <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                        <li>@Html.ActionLink("Photo Gallery", "PhotoGallery", "Home")</li>
+                        <li>@Html.ActionLink("T&Cs", "TermsAndConditions", "Home")</li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </div>
     <div class="container white dropShadow">
         @if (!hideTitle)
@@ -98,26 +121,22 @@
         }
         @RenderBody()
     </div>
-    <footer class="panel-footer">
-        <div class="container">
-                <div class="container-fluid">
-                    <div class="pull-left glyphicon-copyright-mark">
-                        <strong>Copyright© 2015. Designed by DAV</strong>
-                    </div>
-                    <div class="pull-right">
-                        @SocialMediaHelper.SocialMediaButtons(true)
-                    </div>
+    <div class="container white dropShadow">
+        <footer>
+            <div class="row">
+                <div class="col-lg-2">
+                    Designed by DAV.
                 </div>
-        </div>
-    </footer>
+                <div class="col-lg-3">
+                    <strong>Copyright © 2015. All Rights Reserved.</strong>
+                </div>
+                <div class="col-lg-7">
+                    @SocialMediaHelper.SocialMediaButtons(true)
+                </div>
+            </div>
+        </footer>
+    </div>
     @RenderSection("scripts", required: false)
-    <script type="text/javascript">
-        $(function () {
-            $("#slider").excoloSlider({
-                autoSize: true,
-                height: 359
-            });
-        });
-    </script>
+
 </body>
 </html>

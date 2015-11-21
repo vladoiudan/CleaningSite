@@ -1,44 +1,29 @@
 ﻿@using DAV.UniverseCleaning.App_LocalResources
-
+@using DAV.UniverseCleaning.Models;
 @{
     ViewBag.Title = Resource.OffersTitle;
     ViewBag.Message = Resource.OffersMessage;
     ViewBag.Keywords = Resource.SpecialOffersKeywords;
     ViewBag.Description = Resource.OffersDescription;
+    var offers = new List<Offer>();
+    offers.Add(new Offer("25 % of on your first clean.", "Are you a new client? Contact us and we'll give you 25% of on your first clean."));
+    offers.Add(new Offer("10% of on Oven Clean in July.", "Hire us to clean your oven in July and you get 10% off."));
 }
-
 <p>
     We are constantly working to offer you the best value for money we can, and this cleaning special offers page is all about helping you save money.
     Our offers are changing all the time so be sure to visit our cleaning special offers page so that you can keep an eye out for the offer that best suits you.
 </p>
-
-<h3>Our Special Offers</h3>
-<div class="row">
-    <img async class="center-image" src="@Url.Content("~/Images/Offer3.png")" alt="Tell your friend about us and you'll receive a free cleaning for every customer that becomes regular" />
-</div>
-<div class="clearMed"></div>
-<div class="row">
-    <div class="col-lg-3">
-        <img async src="@Url.Content("~/Images/Offer1.png")" alt="25% of on your first clean." />
-    </div>
-    <div class="col-lg-9">
-        <p>
-            <strong>25 % of on your first clean.</strong><br />
-            Are you a new client? Contact us and we'll give you 25% of on your first clean.
-        </p>
-    </div>
-</div>
-<div class="clearMed"></div>
-<div class="row">
-    <div class="col-lg-3">
-        <img async src="@Url.Content("~/Images/Offer2.png")" alt="10% off on oven clean in July" />
-    </div>
-    <div class="col-lg-9">
-        <p>
-            <strong>10% of on Oven Clean in July</strong><br />
-            Hire us to clean your oven in July and you get 10% off.
-        </p>
-    </div>
-</div>
-<div class="clearMed"></div>
-
+@if (offers.Any())
+{
+    <h3>Our Special Offers</h3>
+    foreach (var offer in offers)
+    {
+        <div class="row">
+            <div class="col-lg-12">
+                <h3>@offer.Title</h3>
+                <p>@offer.Details</p>
+            </div>
+        </div>
+        <div class="clear"></div>
+    }
+}

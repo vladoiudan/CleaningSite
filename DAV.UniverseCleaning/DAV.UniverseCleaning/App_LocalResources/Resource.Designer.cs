@@ -432,6 +432,33 @@ namespace DAV.UniverseCleaning.App_LocalResources {
         /// <summary>
         ///   Looks up a localized string similar to Universe Cleaning offers a Professional and Quality Cleaning at an affordable price. Fully insured staff work in teams of two to efficiently clean your home..
         /// </summary>
+        public static string PhotoGalleryDescription {
+            get {
+                return ResourceManager.GetString("PhotoGalleryDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bishops Stortford Cleaning, Bishop Cleaning, Cheshunt Cleaning, Hertford Cleaning, Hoddeston Cleaning, Harlow Cleaning, Roydon Cleaning, Broxborne Cleaning.
+        /// </summary>
+        public static string PhotoGalleryKeywords {
+            get {
+                return ResourceManager.GetString("PhotoGalleryKeywords", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Photo Gallery.
+        /// </summary>
+        public static string PhotoGalleryTitle {
+            get {
+                return ResourceManager.GetString("PhotoGalleryTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Universe Cleaning offers a Professional and Quality Cleaning at an affordable price. Fully insured staff work in teams of two to efficiently clean your home..
+        /// </summary>
         public static string ServicesDescription {
             get {
                 return ResourceManager.GetString("ServicesDescription", resourceCulture);
