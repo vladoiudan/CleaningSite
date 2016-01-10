@@ -1,8 +1,32 @@
-﻿@using DAV.UniverseCleaning.App_LocalResources
+﻿@using System
+@using DAV.UniverseCleaning.App_LocalResources
 @using DAV.UniverseCleaning.Controllers
 @{
     var hideTitle = ViewBag.HideTitle ?? false;
     var hideMessage = ViewBag.HideMessage ?? false;
+    var openNowText = "Closed Now";
+    var openingTimesClass = "lead btn-danger openingTimes pull-right";
+    bool includeWeekendWorking = true;
+    var dayOfTheWeek = System.DateTime.Now.DayOfWeek;
+    bool isWeekend = (dayOfTheWeek == DayOfWeek.Saturday || dayOfTheWeek == DayOfWeek.Sunday);
+    var startTime = new TimeSpan(9, 0, 0);
+    var endTime = new TimeSpan(17, 0, 0);
+    if (DateTime.Now.TimeOfDay >= startTime && DateTime.Now.TimeOfDay <= endTime)
+    {
+        if (isWeekend)
+        {
+            if (includeWeekendWorking)
+            {
+                openingTimesClass = "lead btn-success openingTimes pull-right";
+                openNowText = "Open Now";
+            }
+        }
+        else
+        {
+            openingTimesClass = "lead btn-success openingTimes pull-right";
+            openNowText = "Open Now";
+        }
+    }
 }
 <!DOCTYPE html>
 <html>
@@ -54,17 +78,18 @@
                     <div class="pull-left">
                         <span><abbr title="Mobile">M:</abbr></span>
                         <p class="textRight">
-                            <strong>@Resource.MobilePhone</strong>
+                            <a href="tel://@Resource.MobilePhone"><strong>@Resource.MobilePhone</strong></a>
                         </p>
                     </div>
                     &nbsp;&nbsp;
                     <div class="pull-right">
                         <span><abbr title="Landline">L:</abbr></span>
                         <p class="textRight">
-                            <strong>@Resource.Landline</strong>
+                            <a href="tel://@Resource.Landline"><strong>@Resource.Landline</strong></a>
                         </p>
                     </div>
                 </div>
+                <span class="@openingTimesClass">@openNowText</span>
             </div>
         </div>
         <nav class="navbar navbar-default" role="navigation">
